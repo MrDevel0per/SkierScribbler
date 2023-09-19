@@ -1,13 +1,13 @@
 //
-//  SkierScribblesUITests.swift
-//  SkierScribblesUITests
+//  SkierScribblerUITests.swift
+//  SkierScribblerUITests
 //
 //  Created by Owen Cruz-Abrams on 9/18/23.
 //
 
 import XCTest
 
-final class SkierScribblesUITests: XCTestCase {
+final class SkierScribblerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,13 +1,13 @@
 //
-//  SkierScribblesUITestsLaunchTests.swift
-//  SkierScribblesUITests
+//  SkierScribblerUITestsLaunchTests.swift
+//  SkierScribblerUITests
 //
 //  Created by Owen Cruz-Abrams on 9/18/23.
 //
 
 import XCTest
 
-final class SkierScribblesUITestsLaunchTests: XCTestCase {
+final class SkierScribblerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

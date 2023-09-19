@@ -1,6 +1,6 @@
 //
 //  SkierScribblerApp.swift
-//  SkierScribbles
+//  SkierScribbler
 //
 //  Created by Owen Cruz-Abrams on 9/18/23.
 //

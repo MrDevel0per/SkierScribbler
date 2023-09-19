@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AC37BD82AB94E3800A74AAD /* SkierScribblesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC37BD72AB94E3800A74AAD /* SkierScribblesApp.swift */; };
-		5AC37BDA2AB94E3800A74AAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC37BD92AB94E3800A74AAD /* ContentView.swift */; };
-		5AC37BDC2AB94E4100A74AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC37BDB2AB94E4100A74AAD /* Assets.xcassets */; };
-		5AC37BDF2AB94E4100A74AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC37BDE2AB94E4100A74AAD /* Preview Assets.xcassets */; };
-		5AC37BE92AB94E4100A74AAD /* SkierScribblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC37BE82AB94E4100A74AAD /* SkierScribblesTests.swift */; };
-		5AC37BF32AB94E4100A74AAD /* SkierScribblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC37BF22AB94E4100A74AAD /* SkierScribblesUITests.swift */; };
-		5AC37BF52AB94E4100A74AAD /* SkierScribblesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC37BF42AB94E4100A74AAD /* SkierScribblesUITestsLaunchTests.swift */; };
+		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
+		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
+		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
+		5AD9CAEB2ABA198E0079CB55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE72ABA198E0079CB55 /* ContentView.swift */; };
+		5AD9CAEE2ABA19F70079CB55 /* SkierScribblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */; };
+		5AD9CAF22ABA19FD0079CB55 /* SkierScribblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAF02ABA19FD0079CB55 /* SkierScribblerUITests.swift */; };
+		5AD9CAF32ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAF12ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5AC37BD42AB94E3800A74AAD /* SkierScribbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkierScribbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC37BD72AB94E3800A74AAD /* SkierScribblesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkierScribblesApp.swift; sourceTree = "<group>"; };
-		5AC37BD92AB94E3800A74AAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5AC37BDB2AB94E4100A74AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5AC37BDE2AB94E4100A74AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5AC37BE42AB94E4100A74AAD /* SkierScribblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkierScribblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC37BE82AB94E4100A74AAD /* SkierScribblesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkierScribblesTests.swift; sourceTree = "<group>"; };
-		5AC37BEE2AB94E4100A74AAD /* SkierScribblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkierScribblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC37BF22AB94E4100A74AAD /* SkierScribblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkierScribblesUITests.swift; sourceTree = "<group>"; };
-		5AC37BF42AB94E4100A74AAD /* SkierScribblesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkierScribblesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AC37BD42AB94E3800A74AAD /* SkierScribbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkierScribbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC37BE42AB94E4100A74AAD /* SkierScribblerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkierScribblerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC37BEE2AB94E4100A74AAD /* SkierScribblerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkierScribblerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerApp.swift; sourceTree = "<group>"; };
+		5AD9CAE72ABA198E0079CB55 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerTests.swift; sourceTree = "<group>"; };
+		5AD9CAF02ABA19FD0079CB55 /* SkierScribblerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerUITests.swift; sourceTree = "<group>"; };
+		5AD9CAF12ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 		5AC37BCB2AB94E3800A74AAD = {
 			isa = PBXGroup;
 			children = (
-				5AC37BD62AB94E3800A74AAD /* SkierScribbles */,
-				5AC37BE72AB94E4100A74AAD /* SkierScribblesTests */,
-				5AC37BF12AB94E4100A74AAD /* SkierScribblesUITests */,
+				5AD9CAE22ABA198E0079CB55 /* SkierScribbler */,
+				5AD9CAEC2ABA19F70079CB55 /* SkierScribblerTests */,
+				5AD9CAEF2ABA19FD0079CB55 /* SkierScribblerUITests */,
 				5AC37BD52AB94E3800A74AAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,55 +84,55 @@
 		5AC37BD52AB94E3800A74AAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AC37BD42AB94E3800A74AAD /* SkierScribbles.app */,
-				5AC37BE42AB94E4100A74AAD /* SkierScribblesTests.xctest */,
-				5AC37BEE2AB94E4100A74AAD /* SkierScribblesUITests.xctest */,
+				5AC37BD42AB94E3800A74AAD /* SkierScribbler.app */,
+				5AC37BE42AB94E4100A74AAD /* SkierScribblerTests.xctest */,
+				5AC37BEE2AB94E4100A74AAD /* SkierScribblerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5AC37BD62AB94E3800A74AAD /* SkierScribbles */ = {
+		5AD9CAE22ABA198E0079CB55 /* SkierScribbler */ = {
 			isa = PBXGroup;
 			children = (
-				5AC37BD72AB94E3800A74AAD /* SkierScribblesApp.swift */,
-				5AC37BD92AB94E3800A74AAD /* ContentView.swift */,
-				5AC37BDB2AB94E4100A74AAD /* Assets.xcassets */,
-				5AC37BDD2AB94E4100A74AAD /* Preview Content */,
+				5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */,
+				5AD9CAE42ABA198E0079CB55 /* Preview Content */,
+				5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */,
+				5AD9CAE72ABA198E0079CB55 /* ContentView.swift */,
 			);
-			path = SkierScribbles;
+			path = SkierScribbler;
 			sourceTree = "<group>";
 		};
-		5AC37BDD2AB94E4100A74AAD /* Preview Content */ = {
+		5AD9CAE42ABA198E0079CB55 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5AC37BDE2AB94E4100A74AAD /* Preview Assets.xcassets */,
+				5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5AC37BE72AB94E4100A74AAD /* SkierScribblesTests */ = {
+		5AD9CAEC2ABA19F70079CB55 /* SkierScribblerTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AC37BE82AB94E4100A74AAD /* SkierScribblesTests.swift */,
+				5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */,
 			);
-			path = SkierScribblesTests;
+			path = SkierScribblerTests;
 			sourceTree = "<group>";
 		};
-		5AC37BF12AB94E4100A74AAD /* SkierScribblesUITests */ = {
+		5AD9CAEF2ABA19FD0079CB55 /* SkierScribblerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5AC37BF22AB94E4100A74AAD /* SkierScribblesUITests.swift */,
-				5AC37BF42AB94E4100A74AAD /* SkierScribblesUITestsLaunchTests.swift */,
+				5AD9CAF02ABA19FD0079CB55 /* SkierScribblerUITests.swift */,
+				5AD9CAF12ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift */,
 			);
-			path = SkierScribblesUITests;
+			path = SkierScribblerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5AC37BD32AB94E3800A74AAD /* SkierScribbles */ = {
+		5AC37BD32AB94E3800A74AAD /* SkierScribbler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AC37BF82AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribbles" */;
+			buildConfigurationList = 5AC37BF82AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribbler" */;
 			buildPhases = (
 				5AC37BD02AB94E3800A74AAD /* Sources */,
 				5AC37BD12AB94E3800A74AAD /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = SkierScribbles;
+			name = SkierScribbler;
 			productName = SkierScribbles;
-			productReference = 5AC37BD42AB94E3800A74AAD /* SkierScribbles.app */;
+			productReference = 5AC37BD42AB94E3800A74AAD /* SkierScribbler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5AC37BE32AB94E4100A74AAD /* SkierScribblesTests */ = {
+		5AC37BE32AB94E4100A74AAD /* SkierScribblerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AC37BFB2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblesTests" */;
+			buildConfigurationList = 5AC37BFB2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblerTests" */;
 			buildPhases = (
 				5AC37BE02AB94E4100A74AAD /* Sources */,
 				5AC37BE12AB94E4100A74AAD /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				5AC37BE62AB94E4100A74AAD /* PBXTargetDependency */,
 			);
-			name = SkierScribblesTests;
+			name = SkierScribblerTests;
 			productName = SkierScribblesTests;
-			productReference = 5AC37BE42AB94E4100A74AAD /* SkierScribblesTests.xctest */;
+			productReference = 5AC37BE42AB94E4100A74AAD /* SkierScribblerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5AC37BED2AB94E4100A74AAD /* SkierScribblesUITests */ = {
+		5AC37BED2AB94E4100A74AAD /* SkierScribblerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AC37BFE2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblesUITests" */;
+			buildConfigurationList = 5AC37BFE2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblerUITests" */;
 			buildPhases = (
 				5AC37BEA2AB94E4100A74AAD /* Sources */,
 				5AC37BEB2AB94E4100A74AAD /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				5AC37BF02AB94E4100A74AAD /* PBXTargetDependency */,
 			);
-			name = SkierScribblesUITests;
+			name = SkierScribblerUITests;
 			productName = SkierScribblesUITests;
-			productReference = 5AC37BEE2AB94E4100A74AAD /* SkierScribblesUITests.xctest */;
+			productReference = 5AC37BEE2AB94E4100A74AAD /* SkierScribblerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5AC37BCF2AB94E3800A74AAD /* Build configuration list for PBXProject "SkierScribbles" */;
+			buildConfigurationList = 5AC37BCF2AB94E3800A74AAD /* Build configuration list for PBXProject "SkierScribbler" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AC37BD32AB94E3800A74AAD /* SkierScribbles */,
-				5AC37BE32AB94E4100A74AAD /* SkierScribblesTests */,
-				5AC37BED2AB94E4100A74AAD /* SkierScribblesUITests */,
+				5AC37BD32AB94E3800A74AAD /* SkierScribbler */,
+				5AC37BE32AB94E4100A74AAD /* SkierScribblerTests */,
+				5AC37BED2AB94E4100A74AAD /* SkierScribblerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,8 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC37BDF2AB94E4100A74AAD /* Preview Assets.xcassets in Resources */,
-				5AC37BDC2AB94E4100A74AAD /* Assets.xcassets in Resources */,
+				5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */,
+				5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC37BDA2AB94E3800A74AAD /* ContentView.swift in Sources */,
-				5AC37BD82AB94E3800A74AAD /* SkierScribblesApp.swift in Sources */,
+				5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */,
+				5AD9CAEB2ABA198E0079CB55 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC37BE92AB94E4100A74AAD /* SkierScribblesTests.swift in Sources */,
+				5AD9CAEE2ABA19F70079CB55 /* SkierScribblerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC37BF32AB94E4100A74AAD /* SkierScribblesUITests.swift in Sources */,
-				5AC37BF52AB94E4100A74AAD /* SkierScribblesUITestsLaunchTests.swift in Sources */,
+				5AD9CAF32ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift in Sources */,
+				5AD9CAF22ABA19FD0079CB55 /* SkierScribblerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +284,12 @@
 /* Begin PBXTargetDependency section */
 		5AC37BE62AB94E4100A74AAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5AC37BD32AB94E3800A74AAD /* SkierScribbles */;
+			target = 5AC37BD32AB94E3800A74AAD /* SkierScribbler */;
 			targetProxy = 5AC37BE52AB94E4100A74AAD /* PBXContainerItemProxy */;
 		};
 		5AC37BF02AB94E4100A74AAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5AC37BD32AB94E3800A74AAD /* SkierScribbles */;
+			target = 5AC37BD32AB94E3800A74AAD /* SkierScribbler */;
 			targetProxy = 5AC37BEF2AB94E4100A74AAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -488,7 +488,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkierScribbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkierScribbles";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkierScribbler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkierScribbler";
 			};
 			name = Debug;
 		};
@@ -508,7 +508,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkierScribbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkierScribbles";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkierScribbler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkierScribbler";
 			};
 			name = Release;
 		};
@@ -551,7 +551,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5AC37BCF2AB94E3800A74AAD /* Build configuration list for PBXProject "SkierScribbles" */ = {
+		5AC37BCF2AB94E3800A74AAD /* Build configuration list for PBXProject "SkierScribbler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AC37BF62AB94E4100A74AAD /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AC37BF82AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribbles" */ = {
+		5AC37BF82AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribbler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AC37BF92AB94E4100A74AAD /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AC37BFB2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblesTests" */ = {
+		5AC37BFB2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AC37BFC2AB94E4100A74AAD /* Debug */,
@@ -578,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AC37BFE2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblesUITests" */ = {
+		5AC37BFE2AB94E4100A74AAD /* Build configuration list for PBXNativeTarget "SkierScribblerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5AC37BFF2AB94E4100A74AAD /* Debug */,
