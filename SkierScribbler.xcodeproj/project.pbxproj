@@ -10,10 +10,13 @@
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
-		5AD9CAEB2ABA198E0079CB55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE72ABA198E0079CB55 /* ContentView.swift */; };
+		5AD9CAEB2ABA198E0079CB55 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE72ABA198E0079CB55 /* MotherView.swift */; };
 		5AD9CAEE2ABA19F70079CB55 /* SkierScribblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */; };
 		5AD9CAF22ABA19FD0079CB55 /* SkierScribblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAF02ABA19FD0079CB55 /* SkierScribblerUITests.swift */; };
 		5AD9CAF32ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAF12ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift */; };
+		5AD9CAF62ABA1B490079CB55 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 5AD9CAF52ABA1B490079CB55 /* SwiftSoup */; };
+		5AD9CB032ABA1E150079CB55 /* WebFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB022ABA1E150079CB55 /* WebFilter.swift */; };
+		5AD9CB072ABA1F0A0079CB55 /* allowed_urls.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CB062ABA1F0A0079CB55 /* allowed_urls.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +43,13 @@
 		5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerApp.swift; sourceTree = "<group>"; };
-		5AD9CAE72ABA198E0079CB55 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AD9CAE72ABA198E0079CB55 /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerTests.swift; sourceTree = "<group>"; };
 		5AD9CAF02ABA19FD0079CB55 /* SkierScribblerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerUITests.swift; sourceTree = "<group>"; };
 		5AD9CAF12ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkierScribblerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AD9CAFC2ABA1CF90079CB55 /* Backend_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Backend_README.md; sourceTree = "<group>"; };
+		5AD9CB022ABA1E150079CB55 /* WebFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilter.swift; sourceTree = "<group>"; };
+		5AD9CB062ABA1F0A0079CB55 /* allowed_urls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allowed_urls.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD9CAF62ABA1B490079CB55 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +101,8 @@
 		5AD9CAE22ABA198E0079CB55 /* SkierScribbler */ = {
 			isa = PBXGroup;
 			children = (
-				5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */,
-				5AD9CAE42ABA198E0079CB55 /* Preview Content */,
-				5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */,
-				5AD9CAE72ABA198E0079CB55 /* ContentView.swift */,
+				5AD9CAF82ABA1B590079CB55 /* Resources */,
+				5AD9CAFA2ABA1B7A0079CB55 /* src */,
 			);
 			path = SkierScribbler;
 			sourceTree = "<group>";
@@ -127,6 +132,91 @@
 			path = SkierScribblerUITests;
 			sourceTree = "<group>";
 		};
+		5AD9CAF72ABA1B520079CB55 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CAFE2ABA1D260079CB55 /* Views */,
+				5AD9CAFD2ABA1D220079CB55 /* ViewModels */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		5AD9CAF82ABA1B590079CB55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */,
+				5AD9CAE42ABA198E0079CB55 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AD9CAF92ABA1B650079CB55 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5AD9CAFA2ABA1B7A0079CB55 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CAFB2ABA1CE40079CB55 /* Backend */,
+				5AD9CAF72ABA1B520079CB55 /* Interface */,
+				5AD9CAF92ABA1B650079CB55 /* Main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5AD9CAFB2ABA1CE40079CB55 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CB042ABA1EC00079CB55 /* Filtering */,
+				5AD9CB002ABA1E010079CB55 /* Staff */,
+				5AD9CAFF2ABA1DF90079CB55 /* Articles */,
+				5AD9CAFC2ABA1CF90079CB55 /* Backend_README.md */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		5AD9CAFD2ABA1D220079CB55 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5AD9CAFE2ABA1D260079CB55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CAE72ABA198E0079CB55 /* MotherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AD9CAFF2ABA1DF90079CB55 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		5AD9CB002ABA1E010079CB55 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Staff;
+			sourceTree = "<group>";
+		};
+		5AD9CB042ABA1EC00079CB55 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9CB062ABA1F0A0079CB55 /* allowed_urls.json */,
+				5AD9CB022ABA1E150079CB55 /* WebFilter.swift */,
+			);
+			path = Filtering;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +233,9 @@
 			dependencies = (
 			);
 			name = SkierScribbler;
+			packageProductDependencies = (
+				5AD9CAF52ABA1B490079CB55 /* SwiftSoup */,
+			);
 			productName = SkierScribbles;
 			productReference = 5AC37BD42AB94E3800A74AAD /* SkierScribbler.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +308,9 @@
 				Base,
 			);
 			mainGroup = 5AC37BCB2AB94E3800A74AAD;
+			packageReferences = (
+				5AD9CAF42ABA1B490079CB55 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 5AC37BD52AB94E3800A74AAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */,
+				5AD9CB072ABA1F0A0079CB55 /* allowed_urls.json in Resources */,
 				5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */,
-				5AD9CAEB2ABA198E0079CB55 /* ContentView.swift in Sources */,
+				5AD9CAEB2ABA198E0079CB55 /* MotherView.swift in Sources */,
+				5AD9CB032ABA1E150079CB55 /* WebFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbles/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbles/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -588,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AD9CAF42ABA1B490079CB55 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AD9CAF52ABA1B490079CB55 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AD9CAF42ABA1B490079CB55 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AC37BCC2AB94E3800A74AAD /* Project object */;
 }
