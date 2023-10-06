@@ -1,0 +1,4 @@
+{
+    "staff_url_format": "skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?",
+    "article_url_format": "skierscribbler\\.com\\/[1-9]{5}\\/[a-z]+\\/[a-z -]+[\\/]?"
+}
