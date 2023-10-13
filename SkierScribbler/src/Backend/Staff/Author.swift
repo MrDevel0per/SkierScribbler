@@ -7,19 +7,37 @@
 
 import Foundation
 
-struct Author: Codable, Identifiable {
+struct Author: Codable, Identifiable, Hashable, Equatable {
     var name: String
     var positionTitle: String
-    var description: String
-    var photoURL: URL
     var id: String
+    var url: URL?
     
-    init(name: String, positionTitle: String, description: String, photoURL: URL) {
+    init(name: String, positionTitle: String, url: URL?) {
         self.name = name
         self.positionTitle = positionTitle
-        self.description = description
-        self.photoURL = photoURL
-        self.id = name.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "-", with: "")
+        self.id = name.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "-", with: "").lowercased()
+        self.url = url
+    }
+    
+    init(nameTitleString: String, url: URL?) {
+        let split = nameTitleString.split(separator: ", ")
+        self.init(name: String(split.first ?? "No Author Name"), positionTitle: String(split.last ?? "Unknown Position"), url: url)
+    }
+    
+    //TODO: TESTME
+    init(name: String, positionTitle: String) {
+        self.name = name
+        self.positionTitle = positionTitle
+        self.url = URL(string: "https://skierscribbler.com/staff_name/\(name.replacingOccurrences(of: " ", with: "-"))/")
+        self.id = name.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "-", with: "").lowercased()
+    }
+    
+    init(name: String, positionTitle: String, id: String, url: URL?) {
+        self.name = name
+        self.positionTitle = positionTitle
+        self.id = id
+        self.url = url
     }
     
 }
@@ -28,7 +46,7 @@ struct Author: Codable, Identifiable {
 
 #if DEBUG
 extension Author {
-    static let exampleAuthor = Author(name: "Test Author", positionTitle: "Application Test User", description: "Test Author serves no purpose other than being a test for displaying information.", photoURL: URL(string: "https://skierscribbler.com/wp-content/uploads/2022/05/Website-Header.jpg")!)
+    static let sampleAuthor = Author(name: "Test Author", positionTitle: "Application Test User")
 }
 
 #endif

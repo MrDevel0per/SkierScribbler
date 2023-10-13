@@ -1,5 +1,7 @@
 import XCTest
 
+//Code Attribution: https://gitlab.com/-/snippets/2567566
+
 /// Asserts that an asynchronous expression throws an error.
 /// (Intended to function as a drop-in asynchronous version of `XCTAssertThrowsError`.)
 ///
@@ -19,7 +21,7 @@ import XCTest
 ///   - line: The line number where the failure occurs.
 ///     The default is the line number where you call this function.
 ///   - errorHandler: An optional handler for errors that expression throws.
-func assertThrowsAsyncError<T>(
+func XCAssertThrowsAsyncError<T>(
     _ expression: @autoclosure () async throws -> T,
     _ message: @autoclosure () -> String = "",
     file: StaticString = #filePath,

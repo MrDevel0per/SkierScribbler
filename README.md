@@ -61,3 +61,9 @@ Once the app is open, you can now build and run! You may have to sign locally, b
 # Contributing
 Thank you for wanting to contribute to the project! As of right now, we only use Swift and SwiftUI. If you have another idea, [open a Feature Request](https://github.com/MrDevel0per/SkierScribbler/issues/new). Please see [Contributing.md](https://github.com/MrDevel0per/SkierScribbler/Contributing.md) for more information.
 
+# Open-Source Licenses
+This project is made possible by several open-source licenses. Links:
+- https://github.com/scinfu/swiftsoup
+- https://github.com/ArtSabintsev/FontBlaster.git
+- The Rokkitt and Alegreya fonts
+- https://www.1001fonts.com/upperwestside-font.html

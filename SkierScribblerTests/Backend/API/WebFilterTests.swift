@@ -6,29 +6,57 @@
 //
 
 import XCTest
+@testable import SkierScribbler
 
 final class WebFilterTests: XCTestCase {
-
+    
+    var allowedArticleURLs = [URL]()
+    var allowedStaffURLs = [URL]()
+    var disallowedURLs = [URL]()
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        allowedArticleURLs = ["https://skierscribbler.com/12151/ae/ferris-buellers-day-off/", "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/", "https://skierscribbler.com/12224/opinion/sonorities/", "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/", "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/"].map { str in
+            URL(string: str)!
+        }
+        
+        allowedStaffURLs = ["https://skierscribbler.com/staff_name/quintessa-frisch/", "https://skierscribbler.com/staff_name/gia-galindo-bartley/"].map { str in
+            URL(string: str)!
+        }
+        
+        disallowedURLs = ["https://skierscribbler.com/about/staff/", "skierscribbler.com", "https://skierscribbler.com/print-issues/", "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx", "https://skierscribbler.com/about/staff/", "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx"].map { str in
+            URL(string: str)!
+        }
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testLoadJSON() throws {
+        // First, ensure it doesn't throw.
+        XCTAssertNoThrow(try FilterUtils.loadAllowedJSON())
+        let result = try FilterUtils.loadAllowedJSON()
+        
+        XCTAssertEqual(result.count, 2)
+        
+        XCTAssertEqual(result[0], "^https://?skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?$")
+        
+        XCTAssertEqual(result[1], "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z -]+[\\/]?$")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testFilter() throws {
+        
+        for i in allowedArticleURLs {
+            XCTAssertTrue(WebFilter.filterURL(url: i, pageContents: ""))
+        }
+        for i in allowedStaffURLs {
+            XCTAssertTrue(WebFilter.filterURL(url: i, pageContents: ""))
+        }
+        
+        for i in disallowedURLs {
+            XCTAssertFalse(WebFilter.filterURL(url: i, pageContents: ""))
+        }
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
+    
+    func testFilterPerformance() throws {
         self.measure {
-            // Put the code you want to measure the time of here.
+            _ = WebFilter.filterURL(url: allowedArticleURLs[0], pageContents: "")
         }
     }
 

@@ -6,30 +6,52 @@
 //
 
 import XCTest
+@testable import SkierScribbler
 
-final class URL_CategoryTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class URL_CustomTypes_Tests: XCTestCase {
+    
+    let nos = ["https://skierscribbler.com/staff_name/quintessa-frisch/", "https://skierscribbler.com/staff_name/gia-galindo-bartley/", "https://skierscribbler.com/about/staff/", "skierscribbler.com", "https://skierscribbler.com/print-issues/", "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx", "https://skierscribbler.com/about/staff/", "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx"].map { str in
+        URL(string: str)!
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testIsArticleURL() throws {
+        let yeses = ["https://skierscribbler.com/12151/ae/ferris-buellers-day-off/", "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/", "https://skierscribbler.com/12224/opinion/sonorities/", "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/", "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/"].map { str in
+            URL(string: str)!
         }
+        
+       
+        
+        for i in yeses {
+            XCTAssertTrue(i.isArticleURL, "\(i.relativeString) IS an article URL but was misclassified as a non-article URL.")
+        }
+        
+        for i in nos {
+            XCTAssertFalse(i.isArticleURL, "\(i.relativeString) is NOT an article URL but was misclassified as an article URL.")
+        }
+    }
+    
+    func testID() throws {
+        let testYeses = [URL(string: "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/")!: 12151, URL(string: "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/")!: 12259, URL(string: "https://skierscribbler.com/12224/opinion/sonorities/")!: 12224, URL(string: "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/")!: 1455, URL(string: "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/")!: 12008]
+        
+        for (url, id) in testYeses {
+            XCTAssertEqual(url.id, id)
+        }
+        
+        for i in nos {
+            XCTAssertEqual(i.id, 0)
+        }
+    }
+
+    func testCategory() throws {
+        for i in nos {
+            XCTAssertEqual(i.category, ArticleCategory.uncategorized, "A non-article URL was classified as other than uncategorized: \(i.relativeString) was classified as \(i.category).")
+        }
+        
+        let articles: [URL: ArticleCategory] = [URL(string: "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/")!: .ae, URL(string: "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/")!: .news, URL(string: "https://skierscribbler.com/12224/opinion/sonorities/")!: .opinion, URL(string: "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/")!: .news, URL(string: "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/")!: .showcase, URL(string: "https://skierscribbler.com/12019/uncategorized/satire-boys-history-month/")!: .uncategorized]
+        for i in articles {
+            XCTAssertEqual(i.key.category, i.value, "Category for '\(i.key.relativeString)' was '\(i.key.category)', but should have been '\(i.value)'.")
+        }
+        
     }
 
 }

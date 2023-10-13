@@ -6,6 +6,9 @@
 //
 
 import XCTest
+import SwiftSoup
+
+@testable import SkierScribbler
 
 final class APIClientTests: XCTestCase {
 
@@ -17,19 +20,20 @@ final class APIClientTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    //MARK: - Fetch tests
+    func test404Fetch() async throws {
+        await XCAssertThrowsAsyncError(try await APIClient.shared.fetchPage(at: URL(string: "https://thiswontwork.org/404page")!), "For an unknown reason, fetching a non-existent page https://thiswontwork.org/404page did not throw an error.")
+        
+        // Ensure there's a 404 when getting a nonexistent skierscribbler page as well
+        await XCAssertThrowsAsyncError(try await APIClient.shared.fetchPage(at: URL(string: "https://skierscribbler.com/100")!)) { error in
+            XCTAssertEqual(error as? APIClient.ClientError, APIClient.ClientError.fetchError(404))
         }
     }
+    
+    func testNoErrorFetch() async throws {
+        let document = try await APIClient.shared.fetchPage(at: URL(string: "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/")!)
+        XCTAssertFalse(try document.getAllElements().isEmpty())
+    }
+    
 
 }

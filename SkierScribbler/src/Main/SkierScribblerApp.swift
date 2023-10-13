@@ -6,9 +6,18 @@
 //
 
 import SwiftUI
+import FontBlaster
 
 @main
 struct SkierScribblerApp: App {
+    init() {
+        #if DEBUG
+        FontBlaster.debugEnabled = true
+        #endif
+        FontBlaster.blast()
+        UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25)!]
+
+    }
     var body: some Scene {
         WindowGroup {
             MotherView()
