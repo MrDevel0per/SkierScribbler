@@ -5,7 +5,7 @@
 ![iPadOS Compatibility - SwiftUI](https://img.shields.io/badge/iPadOS_Compatibility-SwiftUI-white)
 ![Mac Compatibility - Mac Catalyst](https://img.shields.io/badge/macOS_Compatibility-Mac_Catalyst-blue)
 # Welcome!
-This is SkierScribbler - the official app of https://skierscribbler.com, your source for AHS news. This app was build by @MrDevel0per (Owen) and @xxmtgxx.
+This is SkierScribbler - the official app of https://skierscribbler.com, your source for [AHS](aspenk12.net) news. This app was build by [@MrDevel0per](https://github.com/MrDevel0per) (Owen).
 ## The App
 The app scrapes https://SkierScribbler.com with help from [SwiftSoup](https://github.com/scinfu/swiftsoup). Owen is the CEO/CTO/CDO (chief dev officer) of OCA Creations LLC, so the app is published on the [App Store under his company](APP_STORE_LINK_HERE). It aims to follow the UI of the website as closely as possible, and includes the following features:
 ### Features
@@ -40,13 +40,13 @@ Once developed, the App will be available on the App Store. For the second, use 
 ### Step 1: Install Xcode
 Install the latest version of Xcode from [the App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or [the Apple Developer website](https://developer.apple.com/xcode/). It's worth noting that this project was built with Xcode 15 beta, but is Xcode 14 compatible.
 ### Step 2: Clone the Repository
-You should have now installed Xcode, which brings git with it. If not, install git: https://git-scm.com.
+You should have now installed Xcode, which brings `git` with it. If not, install git: https://git-scm.com.
 
 Now, enter the following line in Terminal.app:
 ```sh
 git clone https://github.com/MrDevel0per/SkierScribbler.git && cd SkierScribbler
 ```
-If you get a credentials error, you may have to install git-credential-manager first. Take a look at [the Install docs](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md).
+If you get a credentials error, you may have to install `git-credential-manager` first. Take a look at [the Install docs](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md).
 ### Step 3: Build + Run
 While you can `xcodebuild`, the major focus of this app is iOS. You should build to a device or simulator. Open the repo in Xcode:
 ```sh
@@ -54,10 +54,10 @@ open . -a "Xcode.app"
 ```
 Or, if you're running an Xcode Beta:
 ```sh
-open . -a "Xcode Beta.app"
+open . -a "Xcode-beta.app"
 ```
-Once the app is open, you can now build and run! You may have to sign locally, by registering for the Apple Developer program. You're probably better off with the TestFlight beta then. That isn't out yet.
+Once the app is open, you can now build and run! You may have to sign locally, by registering for the Apple Developer program. You're probably better off with the TestFlight beta if you don't have a membership. **The first beta of SkierScribbler will be released by the end of 2023.**
 
 # Contributing
-Thank you for wanting to contribute to the project! As of right now, we only use Swift and SwiftUI. If you have another idea, [open a Feature Request](https://github.com/MrDevel0per/SkierScribbler/issues/new). Please see [Contributing.md](https://github.com/MrDevel0per/SkierScribbler/Contributing.md) for more information.
+Thank you for wanting to contribute to the project! As of right now, we only use Swift and SwiftUI, plus some UIKit Bridging for `WKWebView`. We are open to all contributions, but please note that we will likely **reject** any Objective-C contributions lacking a bridging header. If you have an idea for the app, [open a Feature Request](https://github.com/MrDevel0per/SkierScribbler/issues/new). Please see [Contributing.md](https://github.com/MrDevel0per/SkierScribbler/Contributing.md) for more information.
 
