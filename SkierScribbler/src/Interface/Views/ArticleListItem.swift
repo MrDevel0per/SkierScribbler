@@ -17,11 +17,20 @@ import SwiftUI
 struct ArticleListItem: View {
     var article: Article
     var showImage: Bool = true
+    var image: Image? = nil
     var body: some View {
         VStack {
-            // Display the article's image, if it has one
-            articleImage()
-            Spacer()
+            if article.imageURL != nil {
+                AsyncImage(url: article.imageURL) { img in
+                    img
+                        .resizable()
+                        .scaledToFit()
+                    
+                    
+                } placeholder: {
+                    ProgressView()
+                }
+            }
             Text(article.title)
                 .font(.title(.rokkitt))
                 .multilineTextAlignment(.leading)
@@ -41,6 +50,7 @@ struct ArticleListItem: View {
                 .font(.body(.alegreya))
                 .padding(.horizontal)
                 .padding(.vertical, 1)
+                .multilineTextAlignment(.leading)
         }.navigationLink {
             MotherView()
         }
@@ -48,34 +58,16 @@ struct ArticleListItem: View {
 
     }
     
-    @ViewBuilder private func articleImage() -> some View {
-        GeometryReader { geo in
-            if showImage {
-                if let url = article.imageURL {
-                    ViewThatFits(in: .vertical) {
-                        AsyncImage(url: url) { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                            
-                            
-                        } placeholder: {
-                            ProgressView()
-                        }
-                    }
-                    //TODO: Ensure this is the correct height
-                    .frame(height: geo.size.height * 0.5)
-                    
-                }
-            }
-        }
-    }
+    
 }
 
 #Preview {
     NavigationStack {
-        ArticleListItem(article: Article.sampleArticle)
-        ArticleListItem(article: Article.sampleArticle)
+        ScrollView {
+            ArticleListItem(article: Article.sampleArticle)
+            Divider()
+            ArticleListItem(article: Article.sampleArticle)
+        }
     }
     
 }

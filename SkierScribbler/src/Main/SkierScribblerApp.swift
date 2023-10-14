@@ -15,12 +15,16 @@ struct SkierScribblerApp: App {
         FontBlaster.debugEnabled = true
         #endif
         FontBlaster.blast()
+        //???: Why does this not work?
         UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25)!]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 40)!]
 
     }
     var body: some Scene {
         WindowGroup {
-            MotherView()
+            NavigationStack {
+                MotherView()
+            }.ignoresSafeArea()
         }
     }
 }

@@ -89,7 +89,7 @@ class Parser {
         // Get the parent element - in this case the writer element
         let authorParentElement = try parentHTML.getElementsByClass("catlist-writer").first()
         // The title is stored in the format ", TITLE" under the text of the parent. However, the below gets all sub text too, so we have to be careful.
-        var nameAndTitleStr = try authorParentElement?.text() ?? ""
+        let nameAndTitleStr = try authorParentElement?.text() ?? ""
         // Get the link
         let authorURLContainer = try authorParentElement?.getElementsByTag("a").first()
         // Try to get its URL (href)

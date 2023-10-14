@@ -13,7 +13,6 @@ import SwiftUI
 struct MotherView: View {
     @State var articles: [Article] = []
     var body: some View {
-        NavigationStack{
             
             ScrollView {
                 ForEach(articles, id: \.self) { article in
@@ -23,8 +22,10 @@ struct MotherView: View {
                         Divider()
                     }
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             }
-            .frame(maxHeight: .infinity, alignment: .center)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .ignoresSafeArea()
             .task {
                 let doc = await APIClient.shared.fetchArticles(category: .news)
                 articles = Parser.shared.parseCategory(category: doc)
@@ -33,9 +34,6 @@ struct MotherView: View {
             .padding()
             .navigationTitle("The Skier Scribbler")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.blue, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-        }
     }
 }
 

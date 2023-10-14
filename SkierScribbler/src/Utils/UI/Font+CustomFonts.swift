@@ -9,11 +9,16 @@ import Foundation
 import SwiftUI
 
 extension Font {
-    // Generate a static function for the CustomFont, for each SwiftUI.Font.TextStyle
+    /// A font with the large title text style.
+    /// - Parameter font: The custom font to use.
+    /// - Returns: A font with the large title text style.
     static func body(_ font: CustomFont) -> Self {
         return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .body).pointSize)
     }
     
+    /// A font with the callout text style.
+    /// - Parameter font: The custom font to use.
+    /// - Returns: A font with the callout text style.
     static func callout(_ font: CustomFont) -> Self {
         return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .callout).pointSize)
     }
