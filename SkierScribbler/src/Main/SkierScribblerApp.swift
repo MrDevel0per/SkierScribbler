@@ -16,8 +16,8 @@ struct SkierScribblerApp: App {
         #endif
         FontBlaster.blast()
         //???: Why does this not work?
-        UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25)!]
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 40)!]
+        UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25) ?? UIFont.systemFont(ofSize: 25)]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 40) ?? UIFont.systemFont(ofSize: 40)]
 
     }
     var body: some Scene {
