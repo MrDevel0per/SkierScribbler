@@ -51,6 +51,8 @@
 		5A4A0C242AD10EC300D1E84C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C232AD10EC300D1E84C /* Parser.swift */; };
 		5A4A0C2C2AD259C100D1E84C /* URL+CustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C2B2AD259C100D1E84C /* URL+CustomTypes.swift */; };
 		5A4A0C302AD25A4F00D1E84C /* FilterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C2F2AD25A4F00D1E84C /* FilterUtils.swift */; };
+		5A5EBE8D2ADCCA6200B20428 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */; };
+		5A5EBE8F2ADCCAAB00B20428 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */; };
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
@@ -127,6 +129,8 @@
 		5A4A0C2D2AD259DA00D1E84C /* URL+CustomTypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+CustomTypesTests.swift"; sourceTree = "<group>"; };
 		5A4A0C2F2AD25A4F00D1E84C /* FilterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUtils.swift; sourceTree = "<group>"; };
 		5A4A0C312AD2635800D1E84C /* AsynchronousTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousTestHelpers.swift; sourceTree = "<group>"; };
+		5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		5A7201FC2ACFB9E500CD89D0 /* WebFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilterTests.swift; sourceTree = "<group>"; };
 		5AB1E4B62ACF889A008E9825 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		5ABF43D32ACD160B005AF38E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -472,6 +476,7 @@
 		5AD9CAFD2ABA1D220079CB55 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				5A22943D2AD4F49D00A2EF46 /* ArticleListItem.swift */,
+				5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -699,6 +705,7 @@
 				5AD9CB092ABB66080079CB55 /* Article.swift in Sources */,
 				5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */,
 				5AD9CB0E2ABB691D0079CB55 /* APIClient.swift in Sources */,
+				5A5EBE8F2ADCCAAB00B20428 /* ArticleListViewModel.swift in Sources */,
 				5A22943E2AD4F49D00A2EF46 /* ArticleListItem.swift in Sources */,
 				5A4A0C2C2AD259C100D1E84C /* URL+CustomTypes.swift in Sources */,
 				5AD9CAEB2ABA198E0079CB55 /* MotherView.swift in Sources */,
@@ -707,6 +714,7 @@
 				5A2294452AD4FD7700A2EF46 /* Font+CustomFonts.swift in Sources */,
 				5A4A0C242AD10EC300D1E84C /* Parser.swift in Sources */,
 				5AEF65782AD8999000410C7F /* LogoView.swift in Sources */,
+				5A5EBE8D2ADCCA6200B20428 /* ArticleListView.swift in Sources */,
 				5AD9CB0B2ABB66230079CB55 /* ArticleCategory.swift in Sources */,
 				5AD9CB102ABB69E30079CB55 /* Author.swift in Sources */,
 				5AD9CB032ABA1E150079CB55 /* WebFilter.swift in Sources */,

@@ -19,12 +19,17 @@ class APIClient {
         
     }
     
-    func parseAuthorPage(page: URL) -> Author {
+    func fetchAuthorPage(page: URL) -> Author {
         return Author.sampleAuthor
     }
     
-    func parseAllArticles() -> [Article] {
-        []
+    func fetchAllArticles() async -> [Article] {
+        var returnable: [Article] = []
+        for i in ArticleCategory.allCases {
+            let doc = await fetchArticles(category: i)
+            returnable += Parser.shared.parseCategory(category: doc)
+        }
+        return returnable
     }
     
     func fetchPage(at url: URL) async throws -> SwiftSoup.Document {

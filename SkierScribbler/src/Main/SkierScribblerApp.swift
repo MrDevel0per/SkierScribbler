@@ -15,7 +15,7 @@ struct SkierScribblerApp: App {
         FontBlaster.debugEnabled = true
         #endif
         FontBlaster.blast()
-        //???: Why does this not work?
+        //???: We cannot set the background and the font. Instead, we use a default background. FIXME?
         UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25) ?? UIFont.systemFont(ofSize: 25)]
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 40) ?? UIFont.systemFont(ofSize: 40)]
 
@@ -24,7 +24,7 @@ struct SkierScribblerApp: App {
         WindowGroup {
             NavigationStack {
                 MotherView()
-            }.ignoresSafeArea()
+            }
         }
     }
 }
