@@ -25,17 +25,16 @@ struct ArticleListItem: View {
                     img
                         .resizable()
                         .scaledToFit()
-                    
-                    
                 } placeholder: {
                     ProgressView()
                 }
             }
-            Text(article.title)
-                .font(.title(.rokkitt))
-                .multilineTextAlignment(.leading)
-                .fontWeight(.semibold)
-                .padding(1)
+                Text(article.title)
+                    .font(.title(.rokkitt))
+                    .fontWeight(.semibold)
+                    .leftAlign()
+                    .padding(1)
+                    
             HStack {
                 NavigationLink(article.author.name + ", " + article.author.positionTitle, destination: {
                     MotherView()
@@ -45,16 +44,17 @@ struct ArticleListItem: View {
                 Text(article.strDate)
                 
             }.font(.body(.alegreya))
-            
-            Text(article.teaser)
+                .leftAlign()
+            Text(.init(article.teaser))
                 .font(.body(.alegreya))
-                .padding(.horizontal)
+                .padding(.horizontal, 1)
                 .padding(.vertical, 1)
-                .multilineTextAlignment(.leading)
+                .leftAlign()
         }.navigationLink {
             MotherView()
         }
         .foregroundStyle(.primary)
+        .draggable(article.url)
 
     }
     

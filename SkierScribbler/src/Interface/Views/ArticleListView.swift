@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ArticleListView: View {
-    var viewModel = ArticleListViewModel()
+    @StateObject var viewModel = ArticleListViewModel()
     var body: some View {
             
-            ScrollView {
+        ScrollView {
                 ForEach(viewModel.articles, id: \.self) { article in
                     ArticleListItem(article: article)
                         .padding()
@@ -21,18 +21,24 @@ struct ArticleListView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            .ignoresSafeArea()
-            .task {
-                await viewModel.fetchArticles()
-                
-            }
-            .padding()
-            .navigationTitle("The Skier Scribbler")
-            .navigationBarTitleDisplayMode(.inline)
+        .modifier(ScrollViewMods())
+        .task {
+            await viewModel.fetchArticles()
+        }
     }
 }
 
 #Preview {
     ArticleListView()
+}
+
+extension ArticleListView {
+    struct ScrollViewMods: ViewModifier {
+        func body(content: Content) -> some View {
+            content
+                .scrollIndicators(.hidden)
+                    .navigationTitle("The Skier Scribbler")
+                    .navigationBarTitleDisplayMode(.inline)
+        }
+    }
 }

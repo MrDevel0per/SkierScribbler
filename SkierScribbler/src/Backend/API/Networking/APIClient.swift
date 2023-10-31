@@ -29,6 +29,19 @@ class APIClient {
             let doc = await fetchArticles(category: i)
             returnable += Parser.shared.parseCategory(category: doc)
         }
+        
+        // Unique "returnable"
+        var uniqueArticleIDs = Set<Int>()
+        
+        returnable = returnable.filter({ art in
+            if uniqueArticleIDs.contains(art.id) {
+                    return false // Already seen this ID
+                } else {
+                    uniqueArticleIDs.insert(art.id) // Add the ID to the set
+                    return true // New unique ID
+                }
+        })
+        print(returnable)
         return returnable
     }
     

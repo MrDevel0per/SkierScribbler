@@ -10,7 +10,7 @@ import Foundation
 
 
 //TODO: Docs (@MrDevel0per)
-enum ArticleCategory: String, Codable, CaseIterable {
+enum ArticleCategory: String, Codable, CaseIterable, Sendable {
     case satire = "https://skierscribbler.com/category/satire/"
     case news = "https://skierscribbler.com/category/news/"
     case opinion = "https://skierscribbler.com/category/opinion/"

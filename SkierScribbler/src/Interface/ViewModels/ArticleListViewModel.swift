@@ -13,7 +13,14 @@ extension ArticleListView {
         @Published var articles: [Article] = []
         
         func fetchArticles() async {
-            self.articles = await APIClient.shared.fetchAllArticles()
+            var returnableArticles: [Article] = await APIClient.shared.fetchAllArticles()
+            // Sort by descending date - newest = first
+            returnableArticles.sort{
+                $0.publishDate > $1.publishDate
+            }
+            DispatchQueue.main.async { [returnableArticles] in
+                self.articles = returnableArticles
+            }
         }
     }
 }

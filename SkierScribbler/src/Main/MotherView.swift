@@ -13,7 +13,6 @@ import SwiftUI
 struct MotherView: View {
     @State var articles: [Article] = []
     var body: some View {
-            
            ArticleListView()
     }
 }

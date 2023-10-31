@@ -8,7 +8,7 @@
 import Foundation
 import SwiftSoup
 
-struct Article: Hashable, Equatable {
+struct Article: Hashable, Equatable, Sendable {
     var id: Int
     var category: ArticleCategory
     var title: String
@@ -19,7 +19,7 @@ struct Article: Hashable, Equatable {
     var teaser: String
     var imageURL: URL?
     
-    init(id: Int, category: ArticleCategory, title: String, url: URL, publishDate: Date, author: Author, teaser: String, imageURL: URL? = nil) {
+    init(id: Int, category: ArticleCategory, title: String, url: URL, publishDate: Date, author: Author, teaser: String = "", imageURL: URL? = nil) {
         self.id = id
         self.category = category
         self.title = title
@@ -30,7 +30,7 @@ struct Article: Hashable, Equatable {
         self.publishDate = publishDate
         self.author = author
         if teaser == "" {
-            self.teaser = "There was an error when fetching the article '\(title)' from the server. Please try again later."
+            self.teaser = "There was an error getting *\(title)* from the server, or the article doesn't have a teaser. Please refresh your feed or try again later."
         } else {
             self.teaser = teaser
         }
