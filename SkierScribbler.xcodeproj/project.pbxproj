@@ -53,6 +53,18 @@
 		5A4A0C302AD25A4F00D1E84C /* FilterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C2F2AD25A4F00D1E84C /* FilterUtils.swift */; };
 		5A5EBE8D2ADCCA6200B20428 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */; };
 		5A5EBE8F2ADCCAAB00B20428 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */; };
+		5A6533792AF29EAB00F08503 /* UIWindow+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */; };
+		5A65337A2AF2C6B500F08503 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */; };
+		5A65337B2AF2C6C500F08503 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */; };
+		5A65337C2AF2C6CC00F08503 /* ArticleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22943D2AD4F49D00A2EF46 /* ArticleListItem.swift */; };
+		5A65337D2AF2C6D400F08503 /* GeoFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */; };
+		5A65337E2AF2C6FF00F08503 /* PlatformCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7BB2AF200A900B00F22 /* PlatformCompatibility.swift */; };
+		5A65337F2AF2C6FF00F08503 /* Text+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */; };
+		5A6533802AF2C6FF00F08503 /* View+NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF656F2AD895BF00410C7F /* View+NavigationLink.swift */; };
+		5A6533812AF2C6FF00F08503 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF65772AD8999000410C7F /* LogoView.swift */; };
+		5A6533822AF2C6FF00F08503 /* Font+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2294442AD4FD7700A2EF46 /* Font+CustomFonts.swift */; };
+		5A6533832AF2C6FF00F08503 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22947E2AD5051800A2EF46 /* Color+AppColors.swift */; };
+		5A6533842AF2C6FF00F08503 /* UIWindow+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */; };
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
@@ -134,6 +146,7 @@
 		5A4A0C312AD2635800D1E84C /* AsynchronousTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousTestHelpers.swift; sourceTree = "<group>"; };
 		5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ScreenSize.swift"; sourceTree = "<group>"; };
 		5A7201FC2ACFB9E500CD89D0 /* WebFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilterTests.swift; sourceTree = "<group>"; };
 		5AB1E4B62ACF889A008E9825 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		5ABF43D32ACD160B005AF38E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -218,6 +231,7 @@
 				5AEF656F2AD895BF00410C7F /* View+NavigationLink.swift */,
 				5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */,
 				5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */,
+				5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -727,6 +741,7 @@
 				5A22947F2AD5051800A2EF46 /* Color+AppColors.swift in Sources */,
 				5A2294452AD4FD7700A2EF46 /* Font+CustomFonts.swift in Sources */,
 				5A4A0C242AD10EC300D1E84C /* Parser.swift in Sources */,
+				5A6533792AF29EAB00F08503 /* UIWindow+ScreenSize.swift in Sources */,
 				5AEF65782AD8999000410C7F /* LogoView.swift in Sources */,
 				5A5EBE8D2ADCCA6200B20428 /* ArticleListView.swift in Sources */,
 				5AD9CB0B2ABB66230079CB55 /* ArticleCategory.swift in Sources */,
@@ -741,14 +756,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A22942E2AD4CB4D00A2EF46 /* URL+CustomTypes.swift in Sources */,
+				5A6533812AF2C6FF00F08503 /* LogoView.swift in Sources */,
+				5A65337B2AF2C6C500F08503 /* ArticleListViewModel.swift in Sources */,
+				5A65337A2AF2C6B500F08503 /* ArticleListView.swift in Sources */,
+				5A65337C2AF2C6CC00F08503 /* ArticleListItem.swift in Sources */,
 				5A22942F2AD4CB4D00A2EF46 /* FilterUtils.swift in Sources */,
+				5A6533802AF2C6FF00F08503 /* View+NavigationLink.swift in Sources */,
 				5A2294312AD4CB4D00A2EF46 /* WebFilter.swift in Sources */,
 				5A2294322AD4CB4D00A2EF46 /* APIClient.swift in Sources */,
+				5A6533832AF2C6FF00F08503 /* Color+AppColors.swift in Sources */,
 				5A2294332AD4CB4D00A2EF46 /* Parser.swift in Sources */,
 				5A2294342AD4CB4D00A2EF46 /* Author.swift in Sources */,
+				5A65337E2AF2C6FF00F08503 /* PlatformCompatibility.swift in Sources */,
 				5A2294352AD4CB4D00A2EF46 /* Article.swift in Sources */,
+				5A6533842AF2C6FF00F08503 /* UIWindow+ScreenSize.swift in Sources */,
 				5A2294362AD4CB4D00A2EF46 /* ArticleCategory.swift in Sources */,
+				5A65337D2AF2C6D400F08503 /* GeoFrame.swift in Sources */,
 				5A2294372AD4CB4D00A2EF46 /* MotherView.swift in Sources */,
+				5A65337F2AF2C6FF00F08503 /* Text+Alignment.swift in Sources */,
+				5A6533822AF2C6FF00F08503 /* Font+CustomFonts.swift in Sources */,
 				5A2294382AD4CB4D00A2EF46 /* SkierScribblerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

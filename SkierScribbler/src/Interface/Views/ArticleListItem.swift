@@ -34,7 +34,7 @@ struct ArticleListItem: View {
                     .font(.title(.rokkitt))
                     .fontWeight(.semibold)
                     .leftAlign()
-                    .padding(1)
+                    .padding()
                     
             HStack {
                 NavigationLink(article.author.name + ", " + article.author.positionTitle, destination: {
@@ -46,12 +46,13 @@ struct ArticleListItem: View {
                 
             }.font(.body(.alegreya))
                 .leftAlign()
+                .padding()
             Text(.init(article.teaser))
                 .font(.body(.alegreya))
-                .padding(.horizontal, 1)
-                .padding(.vertical, 1)
+                .padding()
                 .leftAlign()
         }.navigationLink {
+            //TODO: Add weblink here
             MotherView()
         }
         .foregroundStyle(.primary)

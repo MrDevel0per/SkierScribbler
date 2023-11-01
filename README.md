@@ -36,7 +36,9 @@ This may not be included, but there might be a tab to watch live SkierTV.
 - Notifications: This may use FireBase, and will notify the user when a new article comes out from an author/topic they are interested in.
 - Reccomendation on the homepage (if there are enough articles): allow users to like/dislike articles, collect these data, and then eventually train a parser.
 # Installation
-Once developed, the App will be available on the App Store. For the second, use the following steps:
+> [!NOTE]
+> If you are installing SkierScribbler to contribute to the project, read [CONTRIBUTING.md](https://github.com/MrDevel0per/SkierScribbler/blob/main/CONTRIBUTING.md) for how to install for development.
+Once development finishes, the App will be available on the App Store. For the second, use the following steps:
 ### Step 1: Install Xcode
 Install the latest version of Xcode from [the App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or [the Apple Developer website](https://developer.apple.com/xcode/). It's worth noting that this project was built with Xcode 15 beta, but is Xcode 14 compatible.
 ### Step 2: Clone the Repository

@@ -9,15 +9,17 @@ import Foundation
 import SwiftUI
 
 /// A ``SwiftUI.Frame`` object, but with awareness of the width and height of the window or screen.
+/// - Note: The `ScreenAwareFrame` uses a `UIScreen` instance found through context
 struct ScreenAwareFrame: ViewModifier {
     var heightPercentage: CGFloat
     var widthPercentage: CGFloat
     var alignment: Alignment = .center
     func body(content: Content) -> some View {
-        GeometryReader { geo in
             content
-                .frame(width: widthPercentage * geo.size.width, height: heightPercentage * geo.size.height, alignment: alignment)
-        }
+            .frame(width: widthPercentage * (UIScreen.current?.bounds.size.width ?? 500), height: heightPercentage * (UIScreen.current?.bounds.size.height ?? 500), alignment: alignment)
+            .onAppear(perform: {
+                print(UIScreen.current?.bounds.size != nil, "It was nil!")
+            })
     }
 }
 
@@ -28,6 +30,30 @@ extension View {
 }
 
 #Preview {
-    Text("Hello, world! I should be centered.")
-        .modifier(ScreenAwareFrame(heightPercentage: 1, widthPercentage: 1))
+    //FIXME: The `ScrollView` causes the images to be rendered at a TINY size - an issue with GeometryReader?
+    ScrollView{
+        VStack {
+            ArticleListItem(article: .sampleArticle)
+            ArticleListItem(article: .sampleArticle)
+            //        AsyncImage(url: Article.sampleArticle.imageURL) { img in
+            //            img
+            //                .resizable()
+            //                .scaledToFit()
+            //        } placeholder: {
+            //            ProgressView()
+            //        }
+            //
+            //        .modifier(ScreenAwareFrame(heightPercentage: 0.5, widthPercentage: 1))
+            //        AsyncImage(url: Article.sampleArticle.imageURL) { img in
+            //        img
+            //            .resizable()
+            //            .scaledToFit()
+            //    } placeholder: {
+            //        ProgressView()
+            //    }
+            //
+            //    .modifier(ScreenAwareFrame(heightPercentage: 0.5, widthPercentage: 1))
+            //        Spacer()
+        }
+    }
 }
