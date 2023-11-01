@@ -8,57 +8,59 @@
 import Foundation
 import SwiftUI
 
+
 extension Font {
     /// A font with the large title text style.
     /// - Parameter font: The custom font to use.
     /// - Returns: A font with the large title text style.
     static func body(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .body).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .body).pointSize)
     }
     
     /// A font with the callout text style.
     /// - Parameter font: The custom font to use.
     /// - Returns: A font with the callout text style.
     static func callout(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .callout).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .callout).pointSize)
     }
 
     static func caption(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .caption1).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .caption1).pointSize)
     }
 
     static func caption2(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .caption2).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .caption2).pointSize)
     }
 
     static func footnote(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .footnote).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .footnote).pointSize)
     }
 
     static func headline(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .headline).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .headline).pointSize)
     }
 
     static func largeTitle(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .largeTitle).pointSize)
     }
 
     static func subheadline(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .subheadline).pointSize)
     }
 
     static func title(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .title1).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .title1).pointSize)
     }
 
     static func title2(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .title2).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .title2).pointSize)
     }
 
     static func title3(_ font: CustomFont) -> Self {
-        return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .title3).pointSize)
+        return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .title3).pointSize)
     }
 
+    #if canImport(UIKit)
     static func extraLargeTitle(_ font: CustomFont) -> Self {
         return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .extraLargeTitle).pointSize)
     }
@@ -66,6 +68,7 @@ extension Font {
     static func extraLargeTitle2(_ font: CustomFont) -> Self {
         return Font.custom(font.rawValue, size: UIFont.preferredFont(forTextStyle: .extraLargeTitle2).pointSize)
     }
+    #endif
 
     
 
@@ -74,7 +77,7 @@ extension Font {
 }
 
 extension Font.TextStyle {
-    func UIME() -> UIFont.TextStyle {
+    func UIME() -> UXFont.TextStyle {
         switch self {
         case .largeTitle:
             return .largeTitle

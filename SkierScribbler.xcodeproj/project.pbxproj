@@ -67,6 +67,8 @@
 		5AD9CB0E2ABB691D0079CB55 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB0D2ABB691D0079CB55 /* APIClient.swift */; };
 		5AD9CB102ABB69E30079CB55 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB0F2ABB69E30079CB55 /* Author.swift */; };
 		5AEBA7B82AF0AF9F00B00F22 /* Text+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */; };
+		5AEBA7BA2AF1A9AD00B00F22 /* GeoFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */; };
+		5AEBA7BC2AF200A900B00F22 /* PlatformCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7BB2AF200A900B00F22 /* PlatformCompatibility.swift */; };
 		5AEF65502AD71BFA00410C7F /* newsHTML.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF654F2AD71BFA00410C7F /* newsHTML.txt */; };
 		5AEF65702AD895BF00410C7F /* View+NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF656F2AD895BF00410C7F /* View+NavigationLink.swift */; };
 		5AEF65742AD8993800410C7F /* UpperWestSide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AEF65722AD8993800410C7F /* UpperWestSide.ttf */; };
@@ -154,6 +156,9 @@
 		5AD9CB0D2ABB691D0079CB55 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5AD9CB0F2ABB69E30079CB55 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Alignment.swift"; sourceTree = "<group>"; };
+		5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFrame.swift; sourceTree = "<group>"; };
+		5AEBA7BB2AF200A900B00F22 /* PlatformCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformCompatibility.swift; sourceTree = "<group>"; };
+		5AEBA7BD2AF2073A00B00F22 /* SkierScribbler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkierScribbler.entitlements; sourceTree = "<group>"; };
 		5AEF654F2AD71BFA00410C7F /* newsHTML.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = newsHTML.txt; sourceTree = "<group>"; };
 		5AEF656F2AD895BF00410C7F /* View+NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationLink.swift"; sourceTree = "<group>"; };
 		5AEF65722AD8993800410C7F /* UpperWestSide.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UpperWestSide.ttf; sourceTree = "<group>"; };
@@ -212,6 +217,7 @@
 				5A22947E2AD5051800A2EF46 /* Color+AppColors.swift */,
 				5AEF656F2AD895BF00410C7F /* View+NavigationLink.swift */,
 				5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */,
+				5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			children = (
 				5A2294432AD4FD5900A2EF46 /* UI */,
 				5A2294422AD4FD5400A2EF46 /* General */,
+				5AEBA7BB2AF200A900B00F22 /* PlatformCompatibility.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -386,6 +393,7 @@
 		5AD9CAE22ABA198E0079CB55 /* SkierScribbler */ = {
 			isa = PBXGroup;
 			children = (
+				5AEBA7BD2AF2073A00B00F22 /* SkierScribbler.entitlements */,
 				5A2294392AD4CBA700A2EF46 /* Info.plist */,
 				5AD9CAF82ABA1B590079CB55 /* Resources */,
 				5AD9CAFA2ABA1B7A0079CB55 /* src */,
@@ -708,11 +716,13 @@
 				5AD9CB092ABB66080079CB55 /* Article.swift in Sources */,
 				5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */,
 				5AD9CB0E2ABB691D0079CB55 /* APIClient.swift in Sources */,
+				5AEBA7BA2AF1A9AD00B00F22 /* GeoFrame.swift in Sources */,
 				5A5EBE8F2ADCCAAB00B20428 /* ArticleListViewModel.swift in Sources */,
 				5AEBA7B82AF0AF9F00B00F22 /* Text+Alignment.swift in Sources */,
 				5A22943E2AD4F49D00A2EF46 /* ArticleListItem.swift in Sources */,
 				5A4A0C2C2AD259C100D1E84C /* URL+CustomTypes.swift in Sources */,
 				5AD9CAEB2ABA198E0079CB55 /* MotherView.swift in Sources */,
+				5AEBA7BC2AF200A900B00F22 /* PlatformCompatibility.swift in Sources */,
 				5AEF65702AD895BF00410C7F /* View+NavigationLink.swift in Sources */,
 				5A22947F2AD5051800A2EF46 /* Color+AppColors.swift in Sources */,
 				5A2294452AD4FD7700A2EF46 /* Font+CustomFonts.swift in Sources */,
@@ -892,6 +902,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SkierScribbler/SkierScribbler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
@@ -912,6 +923,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.Creations.OCA.SkierScribbler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -923,6 +937,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SkierScribbler/SkierScribbler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
@@ -943,6 +958,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.Creations.OCA.SkierScribbler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

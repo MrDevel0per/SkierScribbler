@@ -25,6 +25,7 @@ struct ArticleListItem: View {
                     img
                         .resizable()
                         .scaledToFit()
+                        .awareFrame(width: 1, height: 0.5)
                 } placeholder: {
                     ProgressView()
                 }
@@ -55,6 +56,7 @@ struct ArticleListItem: View {
         }
         .foregroundStyle(.primary)
         .draggable(article.url)
+        
 
     }
     

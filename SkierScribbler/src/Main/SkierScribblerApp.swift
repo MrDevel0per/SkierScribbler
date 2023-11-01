@@ -18,6 +18,9 @@ struct SkierScribblerApp: App {
         //???: We cannot set the background and the font. Instead, we use a default background. FIXME?
         UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 25) ?? UIFont.systemFont(ofSize: 25)]
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: "UpperWestSide", size: 40) ?? UIFont.systemFont(ofSize: 40)]
+        #if DEBUG
+        print("Application Directory:", NSHomeDirectory())
+        #endif
 
     }
     var body: some Scene {
