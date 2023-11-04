@@ -20,20 +20,26 @@ final class APIClientTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    //MARK: - Fetch tests
+    // MARK: - Fetch tests
     func test404Fetch() async throws {
-        await XCAssertThrowsAsyncError(try await APIClient.shared.fetchPage(at: URL(string: "https://thiswontwork.org/404page")!), "For an unknown reason, fetching a non-existent page https://thiswontwork.org/404page did not throw an error.")
-        
+        await XCAssertThrowsAsyncError(
+            try await APIClient.shared.fetchPage(at: URL(string: "https://thiswontwork.org/404page")!),
+            "For an unknown reason, fetching non-existent page https://thiswontwork.org/404page DID NOT THROW an error."
+        )
+
         // Ensure there's a 404 when getting a nonexistent skierscribbler page as well
-        await XCAssertThrowsAsyncError(try await APIClient.shared.fetchPage(at: URL(string: "https://skierscribbler.com/100")!)) { error in
+        await XCAssertThrowsAsyncError(
+            try await APIClient.shared.fetchPage(at: URL(string: "https://skierscribbler.com/100")!)
+        ) { error in
             XCTAssertEqual(error as? APIClient.ClientError, APIClient.ClientError.fetchError(404))
         }
     }
-    
+
     func testNoErrorFetch() async throws {
-        let document = try await APIClient.shared.fetchPage(at: URL(string: "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/")!)
+        let document = try await APIClient.shared.fetchPage(at: URL(
+            string: "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/"
+        )!)
         XCTAssertFalse(try document.getAllElements().isEmpty())
     }
-    
 
 }

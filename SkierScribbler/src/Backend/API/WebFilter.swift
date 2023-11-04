@@ -9,18 +9,17 @@ import Foundation
 
 /// TODO: Docs (@MrDevel0per)
 class WebFilter {
-    
-    
+
     /// Filters a URL based on pageContents and if it fits a predefined range.
-    ///- parameter url: The ``URL`` that the user/view is trying to access.
-    ///- parameter pageContents: A ``String`` of the contents of the website.
+    /// - parameter url: The ``URL`` that the user/view is trying to access.
+    /// - parameter pageContents: A ``String`` of the contents of the website.
     static func filterURL(url: URL, pageContents: String) -> Bool {
-        guard let regs = FilterUtils.regexes else {
+        guard let regexes = FilterUtils.regexes else {
                 return false
             }
-        for i in regs {
+        for reg in regexes {
                 print(url.absoluteString)
-                if url.absoluteString.contains(i) {
+                if url.absoluteString.contains(reg) {
                     return true
                 }
             }
@@ -28,7 +27,7 @@ class WebFilter {
     }
 }
 
-//MARK: - Extensions
+// MARK: - Extensions
 
 extension WebFilter {
     enum LoadingError: Error {
@@ -39,7 +38,6 @@ extension WebFilter {
 struct URLJSONFormat: Codable {
     var staffURLFormat: String
     var articleURLFormat: String
-    
     enum CodingKeys: String, CodingKey {
         case staffURLFormat = "staff_url_format"
         case articleURLFormat = "article_url_format"

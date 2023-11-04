@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 extension Font {
     /// A font with the large title text style.
     /// - Parameter font: The custom font to use.
@@ -16,7 +15,7 @@ extension Font {
     static func body(_ font: CustomFont) -> Self {
         return Font.custom(font.rawValue, size: UXFont.preferredFont(forTextStyle: .body).pointSize)
     }
-    
+
     /// A font with the callout text style.
     /// - Parameter font: The custom font to use.
     /// - Returns: A font with the callout text style.
@@ -70,13 +69,10 @@ extension Font {
     }
     #endif
 
-    
-
-    
-    
 }
 
 extension Font.TextStyle {
+    // swiftlint:disable cyclomatic_complexity
     func UIME() -> UXFont.TextStyle {
         switch self {
         case .largeTitle:
@@ -101,14 +97,17 @@ extension Font.TextStyle {
             return .caption1
         case .caption2:
             return .caption2
+        #if canImport(UIKit)
         case .extraLargeTitle:
             return .extraLargeTitle
         case .extraLargeTitle2:
             return .extraLargeTitle2
+        #endif
         @unknown default:
             return .body
         }
     }
+    // swiftlint:enable cyclomatic_complexity
 }
 
 enum CustomFont: String {

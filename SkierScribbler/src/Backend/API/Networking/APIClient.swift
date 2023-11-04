@@ -16,23 +16,23 @@ class APIClient {
         } catch {
             return Document("")
         }
-        
+
     }
-    
+
     func fetchAuthorPage(page: URL) -> Author {
         return Author.sampleAuthor
     }
-    
+
     func fetchAllArticles() async -> [Article] {
         var returnable: [Article] = []
-        for i in ArticleCategory.allCases {
-            let doc = await fetchArticles(category: i)
+        for category in ArticleCategory.allCases {
+            let doc = await fetchArticles(category: category)
             returnable += Parser.shared.parseCategory(category: doc)
         }
-        
+
         // Unique "returnable"
         var uniqueArticleIDs = Set<Int>()
-        
+
         returnable = returnable.filter({ art in
             if uniqueArticleIDs.contains(art.id) {
                     return false // Already seen this ID
@@ -44,7 +44,7 @@ class APIClient {
         print(returnable)
         return returnable
     }
-    
+
     func fetchPage(at url: URL) async throws -> SwiftSoup.Document {
         let request = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: request)
@@ -57,10 +57,10 @@ class APIClient {
         }
         return try SwiftSoup.parse(decodedData)
     }
-    
+
 }
 
-//MARK: - Extensions
+// MARK: - Extensions
 extension APIClient {
     enum ClientError: Error, Equatable {
         case fetchError(Int)

@@ -65,6 +65,15 @@
 		5A6533822AF2C6FF00F08503 /* Font+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2294442AD4FD7700A2EF46 /* Font+CustomFonts.swift */; };
 		5A6533832AF2C6FF00F08503 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22947E2AD5051800A2EF46 /* Color+AppColors.swift */; };
 		5A6533842AF2C6FF00F08503 /* UIWindow+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */; };
+		5A6533882AF403E600F08503 /* URL+CustomTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C2D2AD259DA00D1E84C /* URL+CustomTypesTests.swift */; };
+		5A6533892AF4040800F08503 /* AsynchronousTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C312AD2635800D1E84C /* AsynchronousTestHelpers.swift */; };
+		5A65338A2AF4040F00F08503 /* ArticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C292AD1FFB800D1E84C /* ArticleTests.swift */; };
+		5A65338B2AF4040F00F08503 /* ArticleCategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF43E02ACD196F005AF38E /* ArticleCategoryTests.swift */; };
+		5A65338C2AF4040F00F08503 /* WebFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7201FC2ACFB9E500CD89D0 /* WebFilterTests.swift */; };
+		5A65338D2AF4040F00F08503 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C252AD1FF6500D1E84C /* APIClientTests.swift */; };
+		5A65338E2AF4040F00F08503 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A0C272AD1FF7300D1E84C /* ParserTests.swift */; };
+		5A65338F2AF4041200F08503 /* SkierScribblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */; };
+		5A935E282AF4A09E00132588 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935E272AF4A09E00132588 /* URLHelper.swift */; };
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
@@ -147,8 +156,9 @@
 		5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ScreenSize.swift"; sourceTree = "<group>"; };
+		5A6533872AF402FB00F08503 /* SkierScribbler.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SkierScribbler.xctestplan; sourceTree = "<group>"; };
 		5A7201FC2ACFB9E500CD89D0 /* WebFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebFilterTests.swift; sourceTree = "<group>"; };
-		5AB1E4B62ACF889A008E9825 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		5A935E272AF4A09E00132588 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		5ABF43D32ACD160B005AF38E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5ABF43E02ACD196F005AF38E /* ArticleCategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCategoryTests.swift; sourceTree = "<group>"; };
 		5AC37BD42AB94E3800A74AAD /* SkierScribbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkierScribbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -432,7 +442,8 @@
 				5ABF43D42ACD175B005AF38E /* Backend */,
 				5AD9CAED2ABA19F70079CB55 /* SkierScribblerTests.swift */,
 				5ABF43D32ACD160B005AF38E /* README.md */,
-				5AB1E4B62ACF889A008E9825 /* TestPlan.xctestplan */,
+				5A6533872AF402FB00F08503 /* SkierScribbler.xctestplan */,
+				5A935E272AF4A09E00132588 /* URLHelper.swift */,
 			);
 			path = SkierScribblerTests;
 			sourceTree = "<group>";
@@ -566,6 +577,7 @@
 				5AC37BD02AB94E3800A74AAD /* Sources */,
 				5AC37BD12AB94E3800A74AAD /* Frameworks */,
 				5AC37BD22AB94E3800A74AAD /* Resources */,
+				5A6533852AF2DC6900F08503 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -587,6 +599,7 @@
 				5AC37BE02AB94E4100A74AAD /* Sources */,
 				5AC37BE12AB94E4100A74AAD /* Frameworks */,
 				5AC37BE22AB94E4100A74AAD /* Resources */,
+				5A6533862AF2DCE800F08503 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -722,6 +735,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A6533852AF2DC6900F08503 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		5A6533862AF2DCE800F08503 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AC37BD02AB94E3800A74AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -756,23 +808,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A22942E2AD4CB4D00A2EF46 /* URL+CustomTypes.swift in Sources */,
+				5A65338B2AF4040F00F08503 /* ArticleCategoryTests.swift in Sources */,
 				5A6533812AF2C6FF00F08503 /* LogoView.swift in Sources */,
 				5A65337B2AF2C6C500F08503 /* ArticleListViewModel.swift in Sources */,
+				5A65338E2AF4040F00F08503 /* ParserTests.swift in Sources */,
+				5A6533892AF4040800F08503 /* AsynchronousTestHelpers.swift in Sources */,
 				5A65337A2AF2C6B500F08503 /* ArticleListView.swift in Sources */,
 				5A65337C2AF2C6CC00F08503 /* ArticleListItem.swift in Sources */,
 				5A22942F2AD4CB4D00A2EF46 /* FilterUtils.swift in Sources */,
+				5A65338C2AF4040F00F08503 /* WebFilterTests.swift in Sources */,
 				5A6533802AF2C6FF00F08503 /* View+NavigationLink.swift in Sources */,
 				5A2294312AD4CB4D00A2EF46 /* WebFilter.swift in Sources */,
 				5A2294322AD4CB4D00A2EF46 /* APIClient.swift in Sources */,
 				5A6533832AF2C6FF00F08503 /* Color+AppColors.swift in Sources */,
 				5A2294332AD4CB4D00A2EF46 /* Parser.swift in Sources */,
+				5A935E282AF4A09E00132588 /* URLHelper.swift in Sources */,
+				5A65338F2AF4041200F08503 /* SkierScribblerTests.swift in Sources */,
 				5A2294342AD4CB4D00A2EF46 /* Author.swift in Sources */,
+				5A65338D2AF4040F00F08503 /* APIClientTests.swift in Sources */,
 				5A65337E2AF2C6FF00F08503 /* PlatformCompatibility.swift in Sources */,
 				5A2294352AD4CB4D00A2EF46 /* Article.swift in Sources */,
 				5A6533842AF2C6FF00F08503 /* UIWindow+ScreenSize.swift in Sources */,
 				5A2294362AD4CB4D00A2EF46 /* ArticleCategory.swift in Sources */,
 				5A65337D2AF2C6D400F08503 /* GeoFrame.swift in Sources */,
 				5A2294372AD4CB4D00A2EF46 /* MotherView.swift in Sources */,
+				5A6533882AF403E600F08503 /* URL+CustomTypesTests.swift in Sources */,
+				5A65338A2AF4040F00F08503 /* ArticleTests.swift in Sources */,
 				5A65337F2AF2C6FF00F08503 /* Text+Alignment.swift in Sources */,
 				5A6533822AF2C6FF00F08503 /* Font+CustomFonts.swift in Sources */,
 				5A2294382AD4CB4D00A2EF46 /* SkierScribblerApp.swift in Sources */,
@@ -934,6 +995,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkierScribbler/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Skier Scribbler";
@@ -969,6 +1031,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkierScribbler/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkierScribbler/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Skier Scribbler";
@@ -1001,6 +1064,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -1021,6 +1085,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2PJJAJFV32;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;

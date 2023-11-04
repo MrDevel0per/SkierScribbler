@@ -8,8 +8,9 @@
 import Foundation
 import SwiftUI
 
+//FIXME: Does this actually work, or do we just end up with the default max of 500?
 /// A ``SwiftUI.Frame`` object, but with awareness of the width and height of the window or screen.
-/// - Note: The `ScreenAwareFrame` uses a `UIScreen` instance found through context
+/// - Note: The `ScreenAwareFrame` uses a `UIScreen` instance found through context rather than the deprciated `UIScreen.main`.
 struct ScreenAwareFrame: ViewModifier {
     var heightPercentage: CGFloat
     var widthPercentage: CGFloat
@@ -24,14 +25,17 @@ struct ScreenAwareFrame: ViewModifier {
 }
 
 extension View {
-    func awareFrame(width widthPercentage: CGFloat, height heightPercentage: CGFloat, alignment: Alignment = .center) -> some View {
+    func awareFrame(
+        width widthPercentage: CGFloat,
+        height heightPercentage: CGFloat,
+        alignment: Alignment = .center
+    ) -> some View {
         modifier(ScreenAwareFrame(heightPercentage: heightPercentage, widthPercentage: widthPercentage, alignment: alignment))
     }
 }
 
 #Preview {
-    //FIXME: The `ScrollView` causes the images to be rendered at a TINY size - an issue with GeometryReader?
-    ScrollView{
+    ScrollView {
         VStack {
             ArticleListItem(article: .sampleArticle)
             ArticleListItem(article: .sampleArticle)

@@ -1,6 +1,6 @@
 import XCTest
 
-//Code Attribution: https://gitlab.com/-/snippets/2567566
+// Code Attribution: https://gitlab.com/-/snippets/2567566
 
 /// Asserts that an asynchronous expression throws an error.
 /// (Intended to function as a drop-in asynchronous version of `XCTAssertThrowsError`.)

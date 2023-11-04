@@ -13,7 +13,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:SkierScribblerTests/TestPlan.xctestplan"
+            reference = "container:SkierScribblerTests/SkierScribbler.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "BB635CB6-9612-4B1D-965D-34C1F817BDC6",
+      "id" : "CF6F8112-22A2-4D26-A80C-B6CAEC80F3A6",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,14 +9,11 @@
     }
   ],
   "defaultOptions" : {
-    "testTimeoutsEnabled" : true
+
   },
   "testTargets" : [
     {
       "parallelizable" : true,
-      "skippedTests" : [
-        "SkierScribblerTests"
-      ],
       "target" : {
         "containerPath" : "container:SkierScribbler.xcodeproj",
         "identifier" : "5AC37BE32AB94E4100A74AAD",

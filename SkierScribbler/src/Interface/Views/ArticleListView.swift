@@ -10,7 +10,7 @@ import SwiftUI
 struct ArticleListView: View {
     @StateObject var viewModel = ArticleListViewModel()
     var body: some View {
-            
+
         ScrollView {
                 ForEach(viewModel.articles, id: \.self) { article in
                     ArticleListItem(article: article)
