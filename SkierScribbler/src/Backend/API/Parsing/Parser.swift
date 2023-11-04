@@ -56,11 +56,25 @@ class Parser {
         var imageURL: URL?
         // MARK: Image
         // It's stored in the catlist-panel-media, which is a div, under as an img element.
-        imageURL = try URL(string: parentHTML.getElementsByClass("catlist-panel-media").first()?.getElementsByTag("img").attr("src") ?? "")
+        imageURL = try URL(string:
+                            parentHTML.getElementsByClass("catlist-panel-media")
+            .first()?
+            .getElementsByTag("img")
+            .attr("src")
+                           ?? ""
+        )
 
         // MARK: URL, which lets us get a lot of other things
-        let titleComponent = try parentHTML.getElementsByClass("catlist-textarea-with-media").first()?.getElementsByTag("a").first()
-        let unwrappedTitleComponent = try titleComponent ?? parentHTML.getElementsByClass("catlist-textarea").first()?.getElementsByTag("a").first()
+        let titleComponent = try parentHTML.getElementsByClass("catlist-textarea-with-media")
+            .first()?
+            .getElementsByTag("a")
+            .first()
+
+        let unwrappedTitleComponent = try titleComponent ?? parentHTML.getElementsByClass("catlist-textarea")
+            .first()?
+            .getElementsByTag("a")
+            .first()
+
         guard unwrappedTitleComponent != nil else {
             throw ParsingError.unableToFindURL
         }
@@ -105,7 +119,17 @@ class Parser {
         //     <p>The 2023-2024 sports season has officially started, some of which include cross country, football, softball, boys golf, and boys soccer. The teams have been working extremely hard, by training for many...</p>
         // </div>
         teaser = try parentHTML.getElementsByClass("catlist-teaser").text()
-        return Article(id: id, category: category, title: title, url: url, publishDate: publishDate, author: author, teaser: teaser, imageURL: imageURL)
+        return Article(
+            id: id,
+            category: category,
+            title: title,
+            url: url,
+            publishDate: publishDate,
+            author: author,
+            teaser: teaser,
+            imageURL: imageURL
+        )
+        // swiftlint:enable line_length
     }
 
 }

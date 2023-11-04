@@ -38,7 +38,7 @@ struct ArticleListItem: View {
 
             HStack {
                 NavigationLink(article.author.name + ", " + article.author.positionTitle, destination: {
-                    MotherView()
+                    ArticleView(article: self.article)
                 })
                 .foregroundStyle(Color.linkRed)
                 Text("•")
@@ -52,8 +52,7 @@ struct ArticleListItem: View {
                 .padding()
                 .leftAlign()
         }.navigationLink {
-            // TODO: Add weblink here
-            MotherView()
+            ArticleView(article: self.article)
         }
         .foregroundStyle(.primary)
         .draggable(article.url)

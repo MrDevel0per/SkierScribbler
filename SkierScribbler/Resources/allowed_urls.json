@@ -1,4 +1,4 @@
 {
     "staff_url_format": "^https://?skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?$",
-    "article_url_format": "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z -]+[\\/]?$"
+    "article_url_format": "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z \\d -]+[\\/]?$"
 }

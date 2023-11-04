@@ -8,6 +8,7 @@
 import XCTest
 @testable import SkierScribbler
 
+// TODO: Impliment tests for URLs embedded in pageContents
 final class WebFilterTests: XCTestCase {
     var allowedArticleURLs = [URL]()
     var allowedStaffURLs = [URL]()
@@ -18,7 +19,8 @@ final class WebFilterTests: XCTestCase {
             "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/",
             "https://skierscribbler.com/12224/opinion/sonorities/",
             "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/",
-            "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/"
+            "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/",
+            "https://skierscribbler.com/12271/news/2024-paris-olympics/"
         ].map { str in
             URL(string: str)!
         }
@@ -48,7 +50,7 @@ final class WebFilterTests: XCTestCase {
         let result = try FilterUtils.loadAllowedJSON()
         XCTAssertEqual(result.count, 2)
         XCTAssertEqual(result[0], "^https://?skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?$")
-        XCTAssertEqual(result[1], "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z -]+[\\/]?$")
+        XCTAssertEqual(result[1], "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z \\d -]+[\\/]?$")
     }
 
     func testFilter() throws {

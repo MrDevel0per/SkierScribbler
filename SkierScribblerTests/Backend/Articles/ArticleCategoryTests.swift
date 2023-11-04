@@ -49,7 +49,8 @@ final class ArticleCategoryTests: XCTestCase {
 //        DispatchQueue(label: "Background test", qos: .userInitiated).async {
 //            session.dataTask(with: url) {data, response, error in
 //                if let error = error {
-//                    XCTFail("An error was encountered when trying to request data from \(category)'s URL, \(url.relativeString). Error: \(error.localizedDescription)")
+//                    XCTFail("An error was encountered when trying to request data from" +
+//    "\(category)'s URL, \(url.relativeString). Error: \(error.localizedDescription)")
 //                    return
 //                }
 //                // Convert the URL response to a HTTPURLResponse
