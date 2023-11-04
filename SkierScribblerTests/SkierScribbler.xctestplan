@@ -1,0 +1,18 @@
+{
+  "configurations" : [
+    {
+      "id" : "CF6F8112-22A2-4D26-A80C-B6CAEC80F3A6",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
