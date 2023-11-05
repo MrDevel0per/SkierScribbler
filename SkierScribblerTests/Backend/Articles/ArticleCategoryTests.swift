@@ -36,9 +36,7 @@ final class ArticleCategoryTests: XCTestCase {
         try XCTestURL(
             url: url,
             errorMessage: "An error occured when fetching \(category)'s web page. ",
-            // swiftlint:disable line_length
             httpResponseFailureMessage: "An error occured when converting \(category)'s web page response to a HTTPURLResponse. ",
-            // swiftlint:enable line_length
             not200ErrorMessage: "The response code for \(category)'s URL was not 200. "
         )
     }

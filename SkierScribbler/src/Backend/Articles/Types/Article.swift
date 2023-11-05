@@ -7,8 +7,6 @@
 
 import Foundation
 import SwiftSoup
-// We don't care about line length for this file - it has to be long in some places
-// swiftlint:disable line_length
 
 /// The core `Article` type of the app, which stores the data for each SkierScribbler piece.
 struct Article: Hashable, Equatable, Sendable {
@@ -58,13 +56,25 @@ struct Article: Hashable, Equatable, Sendable {
 
 #if DEBUG
 extension Article {
-    static var sampleArticle: Self = Article(id: 0, category: .uncategorized, title: "Sample Article", url: URL.sampleArticleURL, publishDate: Date(), author: Author.sampleAuthor, teaser: "This is a teaser for the sample article, written in such a way that it has the correct number of characters for a teaser (204). This is a very interesting article, and will load the sampleArticleURL if...", imageURL: URL(string: "https://www.rangefinderonline.com/wp-content/uploads/2021/08/B23A9251-Edit.jpg")!)
+    static var sampleArticle: Self = Article(
+        id: 0,
+        category: .uncategorized,
+        title: "Sample Article",
+        url: URL.sampleArticleURL,
+        publishDate: Date(),
+        author: Author.sampleAuthor,
+        // swiftlint:disable line_length
+        teaser: "This is a teaser for the sample article, written in such a way that it has the correct number of characters for a teaser (204). This is a very interesting article, and will load the sampleArticleURL if...",
+        // swiftlint:enable line_length
+        imageURL: URL(
+            string: "https://www.rangefinderonline.com/wp-content/uploads/2021/08/B23A9251-Edit.jpg"
+        )!
+    )
 
-//    func printSelf() {
-//        print("""
-// Article(id: \(self.id), category: SkierScribbler.ArticleCategory.\(String(describing: self.category)), title: "\(self.title)", url: URL(string: "\(self.url.absoluteString)")!, strDate: "\(self.strDate)", publishDate: Date(timeIntervalSince1970: \(self.publishDate.timeIntervalSince1970)), author: SkierScribbler.Author(name: "\(self.author.name)", positionTitle: "\(self.author.positionTitle), id: "\(self.author.id)", url: URL(string: "\(String(describing: self.author.url?.absoluteString))")!), teaser: "\(self.teaser)", imageURL: \(self.imageURL != nil ? "URL(string: \"\(self.imageURL?.absoluteString ?? "")\")!" : "nil"))
-// """, terminator: "")
-//    }
-    // swiftlint:enable line_length
+    func printSelf() {
+        print("""
+ Article(id: \(self.id), category: SkierScribbler.ArticleCategory.\(String(describing: self.category)), title: "\(self.title)", url: URL(string: "\(self.url.absoluteString)")!, strDate: "\(self.strDate)", publishDate: Date(timeIntervalSince1970: \(self.publishDate.timeIntervalSince1970)), author: SkierScribbler.Author(name: "\(self.author.name)", positionTitle: "\(self.author.positionTitle), id: "\(self.author.id)", url: URL(string: "\(String(describing: self.author.url?.absoluteString))")!), teaser: "\(self.teaser)", imageURL: \(self.imageURL != nil ? "URL(string: \"\(self.imageURL?.absoluteString ?? "")\")!" : "nil"))
+ """, terminator: "")
+    }
 }
 #endif

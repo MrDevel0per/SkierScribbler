@@ -11,7 +11,6 @@ import SwiftUI
 ///
 /// It contains the ``TabView`` which has the four tabs of the app: Home, Print Editions, Search, and SkierTV.
 struct MotherView: View {
-    @State var articles: [Article] = []
     var body: some View {
            ArticleListView()
     }

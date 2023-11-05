@@ -18,7 +18,6 @@ class WebFilter {
                 return false
             }
         for reg in regexes {
-                print(url.absoluteString)
                 if url.absoluteString.contains(reg) {
                     return true
                 }

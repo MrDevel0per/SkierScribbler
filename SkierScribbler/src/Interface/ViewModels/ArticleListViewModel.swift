@@ -22,5 +22,9 @@ extension ArticleListView {
                 self.articles = returnableArticles
             }
         }
+
+        func isLastArticle(_ article: Article) -> Bool {
+            articles.last == article
+        }
     }
 }

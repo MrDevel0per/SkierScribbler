@@ -23,9 +23,6 @@ struct SkierScribblerApp: App {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             .font: UIFont(name: "UpperWestSide", size: 40) ??
             UIFont.systemFont(ofSize: 40)]
-        #if DEBUG
-        print("Application Directory:", NSHomeDirectory())
-        #endif
 
     }
     var body: some Scene {

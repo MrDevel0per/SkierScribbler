@@ -34,11 +34,9 @@ final class WebFilterTests: XCTestCase {
             "https://skierscribbler.com/about/staff/",
             "skierscribbler.com",
             "https://skierscribbler.com/print-issues/",
-            // swiftlint:disable line_length
             "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx",
             "https://skierscribbler.com/about/staff/",
             "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx"
-            // swiftlint:enable line_length
         ].map { str in
             URL(string: str)!
         }

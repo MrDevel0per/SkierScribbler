@@ -45,8 +45,8 @@ function removeElementsByClass(className){
         elements[0].parentNode.removeChild(elements[0]);
     }
 }
-removeElementsByClass("sno-header-wrap sno-header-wrap-mobile");
-removeElementsByClass("footer footer_single");
+removeElementsByClass("sno-header-wrap");
+removeElementsByClass("footer");
 """
     }
 }

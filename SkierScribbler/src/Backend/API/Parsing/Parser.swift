@@ -20,7 +20,9 @@ class Parser {
         do {
             return try parseCategory(category)
         } catch {
+            #if DEBUG
             print("An error occured when fetching articles: \(error.localizedDescription)")
+            #endif
             return []
         }
 
@@ -45,7 +47,7 @@ class Parser {
         }
     }
 
-    func parseArticleSubHTML(_ parentHTML: Element) throws -> Article {
+        func parseArticleSubHTML(_ parentHTML: Element) throws -> Article {
         var id: Int
         var category: ArticleCategory
         var title: String
@@ -58,22 +60,15 @@ class Parser {
         // It's stored in the catlist-panel-media, which is a div, under as an img element.
         imageURL = try URL(string:
                             parentHTML.getElementsByClass("catlist-panel-media")
-            .first()?
-            .getElementsByTag("img")
-            .attr("src")
-                           ?? ""
+            .first()?.getElementsByTag("img").attr("src") ?? ""
         )
 
         // MARK: URL, which lets us get a lot of other things
-        let titleComponent = try parentHTML.getElementsByClass("catlist-textarea-with-media")
-            .first()?
-            .getElementsByTag("a")
-            .first()
+        let titleComponent = try parentHTML.getElementsByClass("catlist-textarea-with-media").first()?
+            .getElementsByTag("a").first()
 
-        let unwrappedTitleComponent = try titleComponent ?? parentHTML.getElementsByClass("catlist-textarea")
-            .first()?
-            .getElementsByTag("a")
-            .first()
+        let unwrappedTitleComponent = try titleComponent ?? parentHTML.getElementsByClass("catlist-textarea").first()?
+            .getElementsByTag("a").first()
 
         guard unwrappedTitleComponent != nil else {
             throw ParsingError.unableToFindURL
@@ -113,7 +108,6 @@ class Parser {
         author = Author(nameTitleString: nameAndTitleStr, url: authorURL)
 
         // MARK: Teaser
-        // swiftlint:disable line_length
         // Format:
         // <div class="catlist-teaser">
         //     <p>The 2023-2024 sports season has officially started, some of which include cross country, football, softball, boys golf, and boys soccer. The teams have been working extremely hard, by training for many...</p>
@@ -129,7 +123,6 @@ class Parser {
             teaser: teaser,
             imageURL: imageURL
         )
-        // swiftlint:enable line_length
     }
 
 }

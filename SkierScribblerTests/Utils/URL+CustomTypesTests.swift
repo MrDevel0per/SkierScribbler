@@ -14,9 +14,7 @@ final class URLCustomTypesTests: XCTestCase {
         "https://skierscribbler.com/staff_name/gia-galindo-bartley/",
         "https://skierscribbler.com/about/staff/", "skierscribbler.com",
         "https://skierscribbler.com/print-issues/",
-        // swiftlint:disable line_length
         "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx",
-        // swiftlint:enable line_length
         "https://skierscribbler.com/about/staff/",
         "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx"
     ].map { str in
@@ -70,9 +68,7 @@ final class URLCustomTypesTests: XCTestCase {
         for invalidArticle in invalidArticles {
             XCTAssertEqual(
                 invalidArticle.category, ArticleCategory.uncategorized,
-                // swiftlint:disable line_length
                 "A non-article URL was classified as other than uncategorized: \(invalidArticle.relativeString) was classified as \(invalidArticle.category)."
-                // swiftlint:enable line_length
             )
         }
 
@@ -89,9 +85,7 @@ final class URLCustomTypesTests: XCTestCase {
             // We ensure that the category of the URL matches the statically defined one.
             XCTAssertEqual(
                 article.key.category, article.value,
-                // swiftlint:disable line_length
                 "Category for '\(article.key.relativeString)' was '\(article.key.category)', but should have been '\(article.value)'."
-                // swiftlint:enable line_length
             )
         }
 

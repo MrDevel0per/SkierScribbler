@@ -50,7 +50,6 @@ struct WebViewBridge: UIViewRepresentable {
         let request = URLRequest(url: url)
 
         uiView.load(request)
-        self.isDoneLoading = false
     }
 
     func makeCoordinator() -> Coordinator {
@@ -102,13 +101,13 @@ extension WebViewBridge {
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            parent.isDoneLoading = true
-
             try? getContents(webView)
 
             if parent.javaScriptOnLoad != "" {
                 webView.evaluateJavaScript(parent.javaScriptOnLoad)
             }
+            // IMPORTANT: THIS MUST BE SET AFTER JS EVALUATION, OTHERWISE WE MIGHT NOT SHOW WHAT WE WANT!
+            parent.isDoneLoading = true
         }
 
     }

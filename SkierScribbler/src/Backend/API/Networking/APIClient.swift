@@ -8,6 +8,9 @@
 import Foundation
 import SwiftSoup
 
+/// The main interaction method with the SkierScribbler website.
+/// - Note: For testability and infrastructure purposes, the ``APIClient`` **does not** impliment any parsing logic of its own. It uses the ``Parser`` internally in the ``APIClient.fetchAllArticles`` method, but all actual parsing logic is in the ``Parser``.
+/// - seealso: ``Parser``, ``Article``, ``SwiftSoup.Document``
 class APIClient {
     static let shared = APIClient()
     func fetchArticles(category: ArticleCategory) async -> SwiftSoup.Document {
@@ -19,10 +22,9 @@ class APIClient {
 
     }
 
-    func fetchAuthorPage(page: URL) -> Author {
-        return Author.sampleAuthor
-    }
-
+    // ???: Should this be moved from the `APIClient` to the views themselves?
+    /// Get a list of every single SkierScribbler article on the server.
+    /// - Returns: An array of `Article`s from the website.
     func fetchAllArticles() async -> [Article] {
         var returnable: [Article] = []
         for category in ArticleCategory.allCases {
@@ -41,7 +43,6 @@ class APIClient {
                     return true // New unique ID
                 }
         })
-        print(returnable)
         return returnable
     }
 

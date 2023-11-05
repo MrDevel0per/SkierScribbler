@@ -3,7 +3,6 @@
 //  SkierScribbler
 //
 //  Created by Owen Cruz-Abrams on 10/31/23.
-// swiftlint:disable line_length
 
 import Foundation
 import SwiftUI
@@ -15,16 +14,13 @@ struct ScreenAwareFrame: ViewModifier {
     var heightPercentage: CGFloat
     var widthPercentage: CGFloat
     var alignment: Alignment = .center
-    // swiftlint:enable line_length
+
     func body(content: Content) -> some View {
             content
             .frame(
                 width: widthPercentage * (UIScreen.current?.bounds.size.width ?? 500),
                 height: heightPercentage * (UIScreen.current?.bounds.size.height ?? 500),
                 alignment: alignment)
-            .onAppear(perform: {
-                print(UIScreen.current?.bounds.size != nil, "It was nil!")
-            })
     }
 }
 

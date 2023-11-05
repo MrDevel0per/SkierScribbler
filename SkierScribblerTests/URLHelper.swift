@@ -9,8 +9,6 @@ import Foundation
 import XCTest
 
 extension XCTestCase {
-    // The docs are long, SwiftLint! They make sense.
-    // swiftlint:disable line_length
     /// Assert that a given ``URL`` returns a valid, 200-range status code.
     /// - Note: All parameters except for `url` are optional and have somewhat verbose default values.
     /// - Parameters:
@@ -28,7 +26,6 @@ extension XCTestCase {
         dataErrorMessage: String = "The response Data could not be converted to a String.",
         encoding: String.Encoding = .utf8
     ) throws {
-        // swiftlint:enable line_length
         let expectation = self.expectation(description: "Completed fetch.")
         let session = URLSession.shared
         DispatchQueue(label: "Background test", qos: .userInitiated).async {

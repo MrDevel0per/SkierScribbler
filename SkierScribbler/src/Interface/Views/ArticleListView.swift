@@ -15,7 +15,7 @@ struct ArticleListView: View {
                 ForEach(viewModel.articles, id: \.self) { article in
                     ArticleListItem(article: article)
                         .padding()
-                    if viewModel.articles.firstIndex(of: article) != viewModel.articles.count - 1 {
+                    if !viewModel.isLastArticle(article) {
                         Divider()
                     }
                 }
