@@ -87,7 +87,11 @@ extension URL {
 
     /// If the URL is a URL for a SkierScribbler webpage.
     var isSkierScribbler: Bool {
-        self.relativeString.starts(with: "https://skierscribbler.com")
+        if let reg = try? Regex("(https://)?skierscribbler\\.com") {
+            return self.relativeString.starts(with: reg)
+        } else {
+            return false
+        }
     }
 }
 

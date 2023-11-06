@@ -47,8 +47,8 @@ final class WebFilterTests: XCTestCase {
         XCTAssertNoThrow(try FilterUtils.loadAllowedJSON())
         let result = try FilterUtils.loadAllowedJSON()
         XCTAssertEqual(result.count, 2)
-        XCTAssertEqual(result[0], "^https://?skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?$")
-        XCTAssertEqual(result[1], "^https://?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z \\d -]+[\\/]?$")
+        XCTAssertEqual(result[0], "^(https://)?skierscribbler\\.com\\/staff_name\\/[a-z -]+[\\/]?$")
+        XCTAssertEqual(result[1], "^(https://)?skierscribbler\\.com\\/\\d{4,5}\\/[a-z]+\\/[a-z \\d -]+[\\/]?$")
     }
 
     func testFilter() throws {

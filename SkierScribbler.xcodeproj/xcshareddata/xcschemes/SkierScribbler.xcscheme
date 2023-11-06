@@ -45,17 +45,6 @@
                ReferencedContainer = "container:SkierScribbler.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AC37BED2AB94E4100A74AAD"
-               BuildableName = "SkierScribblerUITests.xctest"
-               BlueprintName = "SkierScribblerUITests"
-               ReferencedContainer = "container:SkierScribbler.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

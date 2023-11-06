@@ -80,6 +80,8 @@
 		5A92D55B2AF6F6A4003D862E /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D5542AF5FD2C003D862E /* ArticleView.swift */; };
 		5A935E282AF4A09E00132588 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935E272AF4A09E00132588 /* URLHelper.swift */; };
 		5AB9076C2AF89B060040548B /* ArticleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22943D2AD4F49D00A2EF46 /* ArticleListItem.swift */; };
+		5AB9076D2AF8A1F50040548B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB082ABB66080079CB55 /* Article.swift */; };
+		5AB9076E2AF8A2010040548B /* WebFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CB022ABA1E150079CB55 /* WebFilter.swift */; };
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
@@ -890,8 +892,10 @@
 			files = (
 				5A92D55A2AF6F6A4003D862E /* WebViewBridge.swift in Sources */,
 				5AD9CAF32ABA19FD0079CB55 /* SkierScribblerUITestsLaunchTests.swift in Sources */,
+				5AB9076E2AF8A2010040548B /* WebFilter.swift in Sources */,
 				5AD9CAF22ABA19FD0079CB55 /* SkierScribblerUITests.swift in Sources */,
 				5A92D55B2AF6F6A4003D862E /* ArticleView.swift in Sources */,
+				5AB9076D2AF8A1F50040548B /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

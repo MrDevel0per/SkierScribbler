@@ -98,7 +98,7 @@ final class URLCustomTypesTests: XCTestCase {
         let invalidSkierURL = invalidArticles.last
 
         for url in validSkierScribblerURLs {
-            XCTAssertTrue(url.isSkierScribbler)
+            XCTAssertTrue(url.isSkierScribbler, "\(url.relativeString) misclassified.")
         }
 
         XCTAssertFalse(invalidSkierURL?.isSkierScribbler ?? false)
