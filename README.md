@@ -61,7 +61,7 @@ open . -a "Xcode-beta.app"
 Once the app is open, you can now build and run! You may have to sign locally, by registering for the Apple Developer program. You're probably better off with the TestFlight beta if you don't have a membership. **The first beta of SkierScribbler will be released by the end of 2023.**
 
 # Contributing
-Thank you for wanting to contribute to the project! As of right now, we only use Swift and SwiftUI, plus some UIKit Bridging for `WKWebView`. We are open to all contributions, but please note that we will likely **reject** any Objective-C contributions lacking a bridging header. If you have an idea for the app, [open a Feature Request](https://github.com/MrDevel0per/SkierScribbler/issues/new). Please see [Contributing.md](https://github.com/MrDevel0per/SkierScribbler/Contributing.md) for more information.
+Thank you for wanting to contribute to the project! As of right now, we only use Swift and SwiftUI, plus some UIKit Bridging for `WKWebView`. We are open to all contributions, but please note that we will likely **reject** any Objective-C contributions lacking a bridging header. If you have an idea for the app, [open a Feature Request]([https://github.com/MrDevel0per/SkierScribbler/issues/new](https://github.com/MrDevel0per/SkierScribbler/issues/new?assignees=MrDevel0per&labels=enhancement&projects=&template=feature_request.md&title=%5BFRQ%5D)). Please see [Contributing.md](https://github.com/MrDevel0per/SkierScribbler/Contributing.md) for more information.
 
 # Open-Source Licenses
 This project is made possible by several open-source licenses. Links:
