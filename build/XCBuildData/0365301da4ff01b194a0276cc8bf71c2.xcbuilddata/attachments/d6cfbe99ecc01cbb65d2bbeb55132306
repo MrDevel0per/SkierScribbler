@@ -1,4 +1,0 @@
-module FontBlaster {
-header "FontBlaster-Swift.h"
-export *
-}
