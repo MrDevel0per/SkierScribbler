@@ -73,6 +73,7 @@ extension URL {
         return 0
     }
 
+    /// Whether the given `URL` is a URL for a SkierScribbler Article.
     var isArticleURL: Bool {
         guard let reg = FilterUtils.regexes?.last else {
             return false
@@ -82,6 +83,11 @@ extension URL {
         } else {
             return false
         }
+    }
+
+    /// If the URL is a URL for a SkierScribbler webpage.
+    var isSkierScribbler: Bool {
+        self.relativeString.starts(with: "https://skierscribbler.com")
     }
 }
 

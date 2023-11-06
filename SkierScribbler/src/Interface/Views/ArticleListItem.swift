@@ -37,16 +37,17 @@ struct ArticleListItem: View {
                     .padding()
 
             HStack {
-                NavigationLink(article.author.name + ", " + article.author.positionTitle, destination: {
+                NavigationLink("\(article.author.name), \(article.author.positionTitle)", destination: {
                     ArticleView(article: self.article)
                 })
                 .foregroundStyle(Color.linkRed)
+                .lineLimit(1)
                 Text("•")
                 Text(article.strDate)
 
             }.font(.body(.alegreya))
                 .leftAlign()
-                .padding()
+                .padding(.leading)
             Text(.init(article.teaser))
                 .font(.body(.alegreya))
                 .padding()

@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master.swiftconstvalues",
+    "dependencies" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master.d",
+    "diagnostics" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master.dia",
+    "emit-module-dependencies" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master-emit-module.dia",
+    "swift-dependencies" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster-master.swiftdeps"
+  },
+  "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/Sources/FontBlaster.swift" : {
+    "index-unit-output-path" : "/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster.o",
+    "llvm-bc" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster.bc",
+    "object" : "/Users/owen/Library/Developer/Xcode/DerivedData/SkierScribbler-bwfjufdqezlnnsclwkcbhmaimtse/SourcePackages/checkouts/FontBlaster/build/FontBlaster.build/Release-iphoneos/FontBlaster.build/Objects-normal/arm64/FontBlaster.o"
+  }
+}

@@ -14,23 +14,24 @@ final class URLCustomTypesTests: XCTestCase {
         "https://skierscribbler.com/staff_name/gia-galindo-bartley/",
         "https://skierscribbler.com/about/staff/", "skierscribbler.com",
         "https://skierscribbler.com/print-issues/",
-        "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx",
         "https://skierscribbler.com/about/staff/",
-        "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx"
+        "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/xxxxxxx",
+        "https://issuu.com/solutions?utm_medium=referral&utm_source=https://skierscribbler.com/1455/news/refderfd-xxxxx"
+    ].map { str in
+        URL(string: str)!
+    }
+
+    let yeses = [
+        "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/",
+        "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/",
+        "https://skierscribbler.com/12224/opinion/sonorities/",
+        "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/",
+        "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/"
     ].map { str in
         URL(string: str)!
     }
 
     func testIsArticleURL() throws {
-        let yeses = [
-            "https://skierscribbler.com/12151/ae/ferris-buellers-day-off/",
-            "https://skierscribbler.com/12259/news/kickoff-to-the-fall-season/",
-            "https://skierscribbler.com/12224/opinion/sonorities/",
-            "https://skierscribbler.com/1455/news/new-ahs-teacher-david-fregly/",
-            "https://skierscribbler.com/12008/showcase/spray-tan-booth-opening/"
-        ].map { str in
-            URL(string: str)!
-        }
         for goodURL in yeses {
             XCTAssertTrue(
                 goodURL.isArticleURL,
@@ -87,6 +88,23 @@ final class URLCustomTypesTests: XCTestCase {
                 article.key.category, article.value,
                 "Category for '\(article.key.relativeString)' was '\(article.key.category)', but should have been '\(article.value)'."
             )
+        }
+
+    }
+
+    func testIsSkierScribbler() {
+        // Last URL is NOT a skierscribbler URL
+        let validSkierScribblerURLs = invalidArticles.dropLast()
+        let invalidSkierURL = invalidArticles.last
+
+        for url in validSkierScribblerURLs {
+            XCTAssertTrue(url.isSkierScribbler)
+        }
+
+        XCTAssertFalse(invalidSkierURL?.isSkierScribbler ?? false)
+
+        for url in yeses {
+            XCTAssert(url.isSkierScribbler)
         }
 
     }

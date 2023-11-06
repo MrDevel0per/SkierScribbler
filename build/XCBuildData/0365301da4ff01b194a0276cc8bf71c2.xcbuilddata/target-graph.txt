@@ -1,0 +1,10 @@
+Target dependency graph (5 targets)
+Target 'SkierScribbler' in project 'SkierScribbler'
+➜ Explicit dependency on target 'SwiftSoup' in project 'SwiftSoup'
+➜ Explicit dependency on target 'FontBlaster' in project 'FontBlaster'
+Target 'FontBlaster' in project 'FontBlaster'
+➜ Explicit dependency on target 'FontBlaster' in project 'FontBlaster'
+Target 'FontBlaster' in project 'FontBlaster' (no dependencies)
+Target 'SwiftSoup' in project 'SwiftSoup'
+➜ Explicit dependency on target 'SwiftSoup' in project 'SwiftSoup'
+Target 'SwiftSoup' in project 'SwiftSoup' (no dependencies)

@@ -56,7 +56,6 @@
 		5A6533792AF29EAB00F08503 /* UIWindow+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6533782AF29EAB00F08503 /* UIWindow+ScreenSize.swift */; };
 		5A65337A2AF2C6B500F08503 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8C2ADCCA6200B20428 /* ArticleListView.swift */; };
 		5A65337B2AF2C6C500F08503 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5EBE8E2ADCCAAB00B20428 /* ArticleListViewModel.swift */; };
-		5A65337C2AF2C6CC00F08503 /* ArticleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22943D2AD4F49D00A2EF46 /* ArticleListItem.swift */; };
 		5A65337D2AF2C6D400F08503 /* GeoFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B92AF1A9AC00B00F22 /* GeoFrame.swift */; };
 		5A65337E2AF2C6FF00F08503 /* PlatformCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7BB2AF200A900B00F22 /* PlatformCompatibility.swift */; };
 		5A65337F2AF2C6FF00F08503 /* Text+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA7B72AF0AF9F00B00F22 /* Text+Alignment.swift */; };
@@ -80,6 +79,7 @@
 		5A92D55A2AF6F6A4003D862E /* WebViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D5562AF5FDB6003D862E /* WebViewBridge.swift */; };
 		5A92D55B2AF6F6A4003D862E /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92D5542AF5FD2C003D862E /* ArticleView.swift */; };
 		5A935E282AF4A09E00132588 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935E272AF4A09E00132588 /* URLHelper.swift */; };
+		5AB9076C2AF89B060040548B /* ArticleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22943D2AD4F49D00A2EF46 /* ArticleListItem.swift */; };
 		5AD9CAE82ABA198E0079CB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE32ABA198E0079CB55 /* Assets.xcassets */; };
 		5AD9CAE92ABA198E0079CB55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE52ABA198E0079CB55 /* Preview Assets.xcassets */; };
 		5AD9CAEA2ABA198E0079CB55 /* SkierScribblerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CAE62ABA198E0079CB55 /* SkierScribblerApp.swift */; };
@@ -857,7 +857,6 @@
 				5A6533892AF4040800F08503 /* AsynchronousTestHelpers.swift in Sources */,
 				5A92D5582AF6F6A3003D862E /* WebViewBridge.swift in Sources */,
 				5A65337A2AF2C6B500F08503 /* ArticleListView.swift in Sources */,
-				5A65337C2AF2C6CC00F08503 /* ArticleListItem.swift in Sources */,
 				5A22942F2AD4CB4D00A2EF46 /* FilterUtils.swift in Sources */,
 				5A65338C2AF4040F00F08503 /* WebFilterTests.swift in Sources */,
 				5A92D5592AF6F6A3003D862E /* ArticleView.swift in Sources */,
@@ -881,6 +880,7 @@
 				5A65337F2AF2C6FF00F08503 /* Text+Alignment.swift in Sources */,
 				5A6533822AF2C6FF00F08503 /* Font+CustomFonts.swift in Sources */,
 				5A2294382AD4CB4D00A2EF46 /* SkierScribblerApp.swift in Sources */,
+				5AB9076C2AF89B060040548B /* ArticleListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

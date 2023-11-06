@@ -1,0 +1,130 @@
+{
+  "" : {
+    "const-values" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master.swiftconstvalues",
+    "dependencies" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master.d",
+    "diagnostics" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master.dia",
+    "emit-module-dependencies" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master-emit-module.dia",
+    "swift-dependencies" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribbler-master.swiftdeps"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/API/Networking/APIClient.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/APIClient.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/API/Parsing/Parser.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Parser.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Parser.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Parser.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/API/WebFilter.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebFilter.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebFilter.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebFilter.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/Articles/Types/Article.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Article.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Article.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Article.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/Articles/Types/ArticleCategory.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleCategory.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleCategory.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleCategory.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Backend/Staff/Author.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Author.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Author.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Author.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/Reusable/LogoView.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/LogoView.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/LogoView.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/LogoView.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/ViewModels/ArticleListViewModel.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListViewModel.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListViewModel.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListViewModel.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/Views/ArticleListItem.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListItem.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListItem.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListItem.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/Views/ArticleListView.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListView.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListView.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleListView.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/WebView/ArticleView.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleView.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleView.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/ArticleView.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Interface/WebView/WebViewBridge.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebViewBridge.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebViewBridge.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/WebViewBridge.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Main/MotherView.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/MotherView.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/MotherView.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/MotherView.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Main/SkierScribblerApp.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribblerApp.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribblerApp.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/SkierScribblerApp.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/General/FilterUtils.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/FilterUtils.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/FilterUtils.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/FilterUtils.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/General/URL+CustomTypes.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/URL+CustomTypes.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/URL+CustomTypes.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/URL+CustomTypes.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/PlatformCompatibility.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/PlatformCompatibility.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/PlatformCompatibility.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/PlatformCompatibility.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/Color+AppColors.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Color+AppColors.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Color+AppColors.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Color+AppColors.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/Font+CustomFonts.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Font+CustomFonts.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Font+CustomFonts.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Font+CustomFonts.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/GeoFrame.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeoFrame.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeoFrame.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/GeoFrame.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/Text+Alignment.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Text+Alignment.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Text+Alignment.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/Text+Alignment.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/UIWindow+ScreenSize.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/UIWindow+ScreenSize.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/UIWindow+ScreenSize.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/UIWindow+ScreenSize.o"
+  },
+  "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/SkierScribbler/src/Utils/UI/View+NavigationLink.swift" : {
+    "index-unit-output-path" : "/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/View+NavigationLink.o",
+    "llvm-bc" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/View+NavigationLink.bc",
+    "object" : "/Users/owen/Development/Lang/SwiftProjects/Journalism/SkierScribbler/build/SkierScribbler.build/Release-iphoneos/SkierScribbler.build/Objects-normal/arm64/View+NavigationLink.o"
+  }
+}
