@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a report to help us improve the SkierScribbler app.
 title: "[BUG]"
 labels: bug
 assignees: MrDevel0per
@@ -24,15 +24,15 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+ - macOS: [e.g. 14.1]
+ - Xcode Version: [e.g. Xcode 15.1-Beta]
+ - Special Conditions: [Any special conditions on your mac that might cause an issue (toolchains, other betas etc.)]
 
 **Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+ - Device/Simulator Device: [e.g. iPhone6]
+ - iOS Version: [e.g. iOS 17.1]
+ - Jailbroken Device: [Yes/No]
+ - App Version: [e.g. 0.0.1-alpha]
 *
 **Crash Report + Additional Context**
 If the app crashed, please attach the crash report here. In addition, add any other context about the problem.
