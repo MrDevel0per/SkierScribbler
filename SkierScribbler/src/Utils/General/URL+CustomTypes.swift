@@ -10,6 +10,10 @@ import Foundation
 extension URL {
     // TODO: Documentation (@MrDevel0per)
     // FIXME: We HAVE to use a Regex instead, b/c otherwise the title can contain the category and cause an error
+    /// The ``ArticleCategory`` of the article.
+    ///
+    /// This is contained in the URL, and is found using a `Regex`.
+    /// - Warning: This relies on a somewhat hacky implimentation with `Int`s, and **may be broken** if the URL format updates at all.
     var category: ArticleCategory {
         if self.isArticleURL {
             let splits = self.relativeString.split(separator: "/")

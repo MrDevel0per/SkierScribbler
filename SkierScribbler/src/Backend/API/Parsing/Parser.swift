@@ -35,7 +35,7 @@ class Parser {
     /// - Parameter doc: The ``SwiftSoup.Document`` of the category's contents.
     /// - Returns: An array of `URLs` containing all articles in the document.
     private func parseCategory(_ doc: Document) throws -> [Article] {
-        // TODO: Change to `Elements` to continue with the native SwiftSoup Types?
+//         TODO: Change to `Elements` to continue with the native SwiftSoup Types?
         var articleHTMLs: [Element] = []
         try doc.getElementsByTag("div").forEach({ element in
             if element.hasClass("catlist-panel-inner") {

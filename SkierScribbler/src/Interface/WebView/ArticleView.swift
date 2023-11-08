@@ -21,12 +21,16 @@ struct ArticleView: View {
     }
 
     var body: some View {
-        WebViewBridge(
-            url: $webPageURL,
-            percentLoaded: $percentLoaded,
-            isDoneLoading: $isDoneLoading,
-            javaScriptOnLoad: removeHeaders()
-        )
+//        if isDoneLoading {
+            WebViewBridge(
+                url: $webPageURL,
+                percentLoaded: $percentLoaded,
+                isDoneLoading: $isDoneLoading,
+                javaScriptOnLoad: removeHeaders()
+            )
+//        } else {
+//            loadingView()
+//        }
     }
 }
 
@@ -48,5 +52,10 @@ function removeElementsByClass(className){
 removeElementsByClass("sno-header-wrap");
 removeElementsByClass("footer");
 """
+    }
+
+    @ViewBuilder func loadingView() -> some View {
+        // TODO: Fancify
+        ProgressView(value: percentLoaded)
     }
 }
