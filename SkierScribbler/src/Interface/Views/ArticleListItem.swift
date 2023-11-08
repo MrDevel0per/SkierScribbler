@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// FIXME: Currently, the author's name and title both link to their page. Should this be changed to match the webpage, where only the name links up?
+// TODO: Make the author name open a `Sheet` with their page
 
 /// A view that displays an article's title, author, date, and teaser. This mimics the layout of skierscribbler.com
 /// - Parameters:
@@ -37,11 +37,7 @@ struct ArticleListItem: View {
                     .padding()
 
             HStack {
-                NavigationLink("\(article.author.name), \(article.author.positionTitle)", destination: {
-                    ArticleView(article: self.article)
-                })
-                .foregroundStyle(Color.linkRed)
-                .lineLimit(1)
+                authorMiniLink()
                 Text("•")
                 Text(article.strDate)
 
@@ -71,4 +67,19 @@ struct ArticleListItem: View {
         }
     }
 
+}
+
+extension ArticleListItem {
+    
+    func authorNameString() -> String {
+        return article.author.name == article.author.positionTitle ? article.author.name : "\(article.author.name), \(article.author.positionTitle)"
+    }
+    
+    @ViewBuilder func authorMiniLink() -> some View {
+        NavigationLink(authorNameString(), destination: {
+            ArticleView(article: self.article)
+        })
+        .foregroundStyle(Color.linkRed)
+        .lineLimit(1)
+    }
 }
