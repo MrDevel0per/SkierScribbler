@@ -48,9 +48,18 @@ struct WebViewBridge: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-            let request = URLRequest(url: url)
-            uiView.load(request)
+        let request = URLRequest(url: url)
+        
+        if UIApplication.shared.applicationState == .active {
+            if url.isArticleURL {
+                uiView.load(request)
+            } else {
+                Sheet(isPresented: .constant(true)) {
+                    WebViewBridge(url: .constant(url), percentLoaded: $percentLoaded, isDoneLoading: $isDoneLoading)
+                }
+            }
         }
+    }
 
     func makeCoordinator() -> Coordinator {
         return Coordinator(self)
