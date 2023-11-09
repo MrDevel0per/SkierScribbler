@@ -22,9 +22,9 @@ class WebFilter {
                 return false
             }
         // It's a staff/article URL
-        if let _ = regexes.first(where: { reg in
+        if regexes.first(where: { reg in
             url.absoluteString.contains(reg)
-        }) {
+        }) != nil {
             return true
         }
         // Check page contents
