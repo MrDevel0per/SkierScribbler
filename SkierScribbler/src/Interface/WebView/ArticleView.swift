@@ -14,6 +14,9 @@ struct ArticleView: View {
     @State var isDoneLoading: Bool
 
     init(article: Article, percentLoaded: Double = 0, isDoneLoading: Bool = false) {
+    @State var isSheetOpen: Bool = true
+=======
+    @State var isSheetOpen: Bool = true
         self.article = article
         _webPageURL = State(initialValue: article.url)
         _percentLoaded = State(initialValue: percentLoaded)
