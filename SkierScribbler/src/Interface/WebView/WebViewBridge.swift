@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 import WebKit
-import WebFilter
+=======
 
 struct WebViewBridge: UIViewRepresentable {
 
@@ -48,16 +48,9 @@ struct WebViewBridge: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        let request = URLRequest(url: url)
-        
-        if url.isArticleURL {
+            let request = URLRequest(url: url)
             uiView.load(request)
-        } else {
-            Sheet(isPresented: .constant(true)) {
-                WebViewBridge(url: .constant(url), percentLoaded: $percentLoaded, isDoneLoading: $isDoneLoading)
-            }
         }
-    }
 
     func makeCoordinator() -> Coordinator {
         return Coordinator(self)
