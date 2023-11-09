@@ -21,14 +21,18 @@ struct ArticleView: View {
     }
 
     var body: some View {
-//        if isDoneLoading {
+        if webPageURL.isArticleURL {
             WebViewBridge(
                 url: $webPageURL,
                 percentLoaded: $percentLoaded,
                 isDoneLoading: $isDoneLoading,
                 javaScriptOnLoad: removeHeaders()
             )
-//        } else {
+        } else {
+            Sheet(isPresented: .constant(true)) {
+                WebViewBridge(url: .constant(webPageURL), percentLoaded: $percentLoaded, isDoneLoading: $isDoneLoading)
+            }
+        }
 //            loadingView()
 //        }
     }
